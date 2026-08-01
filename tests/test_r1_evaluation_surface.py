@@ -2,7 +2,11 @@ from __future__ import annotations
 
 import copy
 import json
+import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 
 from eev4.validation import (
     load_json,
@@ -11,9 +15,6 @@ from eev4.validation import (
     validate_outcome_case,
     validate_status_register,
 )
-
-ROOT = Path(__file__).resolve().parents[1]
-
 
 def test_exact_status_contract() -> None:
     assert validate_status_register(load_json("registry/status-register.yaml")) == []
