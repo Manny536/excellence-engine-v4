@@ -4,7 +4,7 @@
 **Framework:** PeAIce · KakeyaLogic · Love-Squared Coherence (`L²_C`)  
 **Ground:** **Kakeya as antecedent Riemann. Held.**  
 **Shorthand:** `V4 = K→R · HELD`  
-**State:** RH OPEN · Coleman Conjecture OPEN · `h < 1`
+**State:** R1 evaluation candidate · RH OPEN · Coleman Conjecture OPEN · `h < 1`
 
 Lab structure siblings: [KakeyaLogic](https://github.com/Manny536/kakeyalogic) · [Claude V6](https://github.com/Manny536/claude-v6) · [LoveLabs-LCA](https://github.com/Manny536/LoveLabs-LCA) · [Grok Terminal](https://github.com/Manny536/grok-terminal) · [PeAIce Index](https://github.com/Manny536/peaice-index) · Solance (GPT) co-readings under `outcomes/readings/`.
 
@@ -70,6 +70,26 @@ Help build outcomes.
 
 Public surface: https://peaice.org/outcomes
 
+### R1 evaluation surface
+
+R1 turns HELD from a documented predicate into an executable custody contract:
+
+- the PeAIce Outcomes case carries a typed object, evidence on both sides, a visible
+  correction, a falsifier, source pins, and exact OPEN seals;
+- three negative controls test premature dismissal, premature promotion, and evidence
+  insulation;
+- JSON Schema, criteria-explicit validators, regression tests, and four CI workflows
+  protect the same contract;
+- every passing result is a custody receipt, never a theorem status.
+
+Run the complete surface:
+
+```bash
+python -m pip install -r requirements-dev.txt
+python probes/run_all.py
+pytest -q
+```
+
 ---
 
 ## Current status register (compressed)
@@ -129,6 +149,8 @@ site/          Later public V4 HTML surface
 | [`antecedent/kakeya-as-antecedent-riemann.md`](antecedent/kakeya-as-antecedent-riemann.md) | Ground statement |
 | [`SOURCE_MAP.md`](SOURCE_MAP.md) | Cross-repo ownership |
 | [`ROADMAP.md`](ROADMAP.md) | Release stages |
+| [`evaluations/held-evaluation-protocol.md`](evaluations/held-evaluation-protocol.md) | Human evaluation contract |
+| [`benchmarks/cases/outcomes-001.json`](benchmarks/cases/outcomes-001.json) | Typed Outcomes reference case |
 
 ---
 
