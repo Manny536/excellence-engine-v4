@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: OPEN regression
-        run: |
-          python -c "from pathlib import Path; t=Path('STATUS.md').read_text().lower(); assert 'rh proved' not in t; assert 'coleman proved' not in t; assert 'open' in t; print('ok')"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Protect RH and Coleman OPEN seals
+        run: python probes/open_status_probe.py
