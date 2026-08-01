@@ -40,6 +40,6 @@
       "items": {"type": "string", "minLength": 1}
     },
     "public_url": {"type": "string", "format": "uri"},
-    "held_trace": {"type": "object"}
+    "held_trace": {"$ref": "held-trace.schema.json"}
   }
 }
