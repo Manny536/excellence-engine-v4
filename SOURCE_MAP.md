@@ -37,3 +37,14 @@ excellence-engine-v4  custody engine lab (HELD)  ← this repository
 ```
 
 Model readings stay **separate under II.1** (polarization). No ensemble self-certification.
+
+
+## Explicit repository URLs
+
+- https://github.com/Manny536/excellence-engine-v4
+- https://github.com/Manny536/kakeyalogic
+- https://github.com/Manny536/claude-v6
+- https://github.com/Manny536/LoveLabs-LCA
+- https://github.com/Manny536/grok-terminal
+- https://github.com/Manny536/peaice-index
+- https://github.com/Manny536/GPT-v2-excellence-engine-
