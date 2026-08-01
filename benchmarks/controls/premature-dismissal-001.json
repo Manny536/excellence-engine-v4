@@ -32,6 +32,7 @@
     ]
   },
   "expected_errors": [
+    "missing:correction",
     "fail:evidence_supporting",
     "fail:evidence_counter",
     "fail:correction",
