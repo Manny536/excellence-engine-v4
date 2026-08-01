@@ -1,5 +1,6 @@
 {
   "case_id": "outcomes-001",
+  "title": "When AI Will Not Act as a Partner — KakeyaLogic Applied + Benevolence Drift",
   "controlling_designation": "PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001",
   "governing_rule": "Protect the question. Expose the answer to evidence. Help build outcomes.",
   "findings": [
@@ -10,13 +11,70 @@
     "defaults_replace_judgment",
     "scale_method_not_answer"
   ],
-  "open_seals": [
-    "RH",
-    "Coleman",
-    "CC-I",
-    "CC-O",
-    "BD_benchmark"
+  "open_seals": ["RH", "Coleman", "CC-I", "CC-O", "BD_benchmark"],
+  "artifact_ids": [
+    "outcomes-final-pdf",
+    "outcomes-final-docx",
+    "grok-rundown-md",
+    "grok-rundown-docx"
   ],
-  "held_state": "HELD-RETAINED",
-  "public_url": "https://peaice.org/outcomes"
+  "public_url": "https://peaice.org/outcomes",
+  "held_trace": {
+    "case_id": "outcomes-001",
+    "designation": "PEAICE-EEV4-HELD-TRACE-OUTCOMES-001",
+    "object": {
+      "id": "K_to_R",
+      "label": "Kakeya as antecedent Riemann",
+      "kind": "PROPOSED_RESEARCH_OBJECT",
+      "formulation": "Kakeya-geometric incidence is held as prior structure in the proposed dependency order of Riemann control."
+    },
+    "state": "HELD-RETAINED",
+    "status_tags": [
+      "HELD",
+      "PROPOSED",
+      "OPEN:RH",
+      "OPEN:Coleman",
+      "CLOSED:sufficiency_packaging"
+    ],
+    "h_eval": {"bound": "< 1", "passed": true},
+    "evidence": {
+      "supporting": [
+        {
+          "id": "dependency_tower",
+          "claim": "Incidence geometry is upstream of restriction, decoupling, large-value estimates, and zero-density bounds.",
+          "status": "THEOREM-BACKGROUND"
+        },
+        {
+          "id": "kakeya_R3",
+          "claim": "Kakeya sets in R3 have full Minkowski and Hausdorff dimension.",
+          "status": "THEOREM-BACKGROUND"
+        }
+      ],
+      "counter": [
+        {
+          "id": "sufficiency_trap",
+          "claim": "The proven R3 Kakeya theorem does not supply an RH implication.",
+          "status": "CLOSED"
+        },
+        {
+          "id": "exact_bridge_owed",
+          "claim": "Bound-type control does not presently determine exact critical-line placement.",
+          "status": "OPEN"
+        }
+      ]
+    },
+    "correction": {
+      "trigger": "The sufficiency formulation collapses the missing RH-hard bridge into the arrow.",
+      "before": "Kakeya(R3) implies RH.",
+      "after": "Kakeya incidence is held as a candidate necessary precursor and construction substrate; the exact bridge remains open.",
+      "closed_lane": "sufficiency_packaging",
+      "continuity_preserved": true
+    },
+    "falsifier": "An exact Xi-realizing carrier with the required prime weights, T log T density, and no essential Kakeya incidence releases the construction-form antecedent.",
+    "source_refs": [
+      "https://github.com/Manny536/kakeyalogic/blob/main/docs/coleman-conjecture-antecedent.md",
+      "https://github.com/Manny536/kakeyalogic/tree/main/docs/outcomes",
+      "https://github.com/Manny536/claude-v6/blob/main/docs/research/peaice-outcomes-grok-rundown.md"
+    ]
+  }
 }
