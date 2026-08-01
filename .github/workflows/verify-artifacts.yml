@@ -1,0 +1,9 @@
+name: verify-artifacts
+on: [push, pull_request]
+jobs:
+  artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: integrity probe
+        run: python probes/artifact_integrity_probe.py

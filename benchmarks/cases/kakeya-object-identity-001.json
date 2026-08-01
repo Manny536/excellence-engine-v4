@@ -1,0 +1,18 @@
+{
+  "case_id": "kakeya-object-identity-001",
+  "objects": [
+    {
+      "name": "standard_kakeya",
+      "status": "KNOWN"
+    },
+    {
+      "name": "centered_full_line_completion",
+      "status": "FORMAL"
+    },
+    {
+      "name": "coleman_program",
+      "status": "OPEN"
+    }
+  ],
+  "firewall": "no_silent_relabeling"
+}

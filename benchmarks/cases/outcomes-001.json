@@ -1,0 +1,22 @@
+{
+  "case_id": "outcomes-001",
+  "controlling_designation": "PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001",
+  "governing_rule": "Protect the question. Expose the answer to evidence. Help build outcomes.",
+  "findings": [
+    "context_before_verdict",
+    "no_peer_review_not_stop",
+    "conjecture_custody",
+    "neutrality_nonresponse",
+    "defaults_replace_judgment",
+    "scale_method_not_answer"
+  ],
+  "open_seals": [
+    "RH",
+    "Coleman",
+    "CC-I",
+    "CC-O",
+    "BD_benchmark"
+  ],
+  "held_state": "HELD-RETAINED",
+  "public_url": "https://peaice.org/outcomes"
+}

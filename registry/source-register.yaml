@@ -1,0 +1,35 @@
+# External and sibling sources
+version: 1
+siblings:
+  - id: kakeyalogic
+    url: https://github.com/Manny536/kakeyalogic
+    role: field + controlling Outcomes
+  - id: claude-v6
+    url: https://github.com/Manny536/claude-v6
+    role: theorem ledger
+  - id: lovelabs-lca
+    url: https://github.com/Manny536/LoveLabs-LCA
+    role: CUP / BD benchmark home
+  - id: grok-terminal
+    url: https://github.com/Manny536/grok-terminal
+    role: polarized TERMINAL receipts
+  - id: peaice-index
+    url: https://github.com/Manny536/peaice-index
+    role: program index
+  - id: gpt-v2-ee
+    url: https://github.com/Manny536/GPT-v2-excellence-engine-
+    role: Solance/GPT EE lineage
+public:
+  - id: outcomes
+    url: https://peaice.org/outcomes
+  - id: eev3_surface
+    url: https://peaice.org/eev3
+external_math:
+  - id: wang_zahl_2025
+    arxiv: "2502.17655"
+  - id: guth_wang_zahl_2026
+    arxiv: "2601.14411"
+  - id: wang_wu_2024
+    arxiv: "2411.08871"
+  - id: guth_maynard_2024
+    arxiv: "2405.20552"

@@ -1,0 +1,7 @@
+{
+  "case_id": "bd-ai-case-01",
+  "register": "BD-AI",
+  "status": "REGISTERED_QUALITATIVE",
+  "benchmark": "OWED",
+  "note": "Pointer case; full corpus in LoveLabs-LCA / kakeyalogic / claude-v6"
+}

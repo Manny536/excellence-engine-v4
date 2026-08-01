@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HELDTrace",
+  "type": "object",
+  "required": [
+    "case_id",
+    "object",
+    "state",
+    "status_tags",
+    "h_lt_1"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "object": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "RECEIVED",
+        "HELD-ACTIVE",
+        "HELD-REVISED",
+        "HELD-RETAINED",
+        "HELD-RELEASED",
+        "HELD-CLOSED"
+      ]
+    },
+    "status_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "h_lt_1": {
+      "type": "boolean"
+    },
+    "evidence_for": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_against": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "falsifier": {
+      "type": "string"
+    }
+  }
+}

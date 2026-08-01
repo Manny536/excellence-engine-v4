@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OutcomeCase",
+  "type": "object",
+  "required": [
+    "case_id",
+    "governing_rule",
+    "open_seals"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "governing_rule": {
+      "type": "string"
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_seals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "controlling_designation": {
+      "type": "string"
+    }
+  }
+}

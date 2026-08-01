@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Excellence Engine V4 — Kakeya Antecedent · HELD"
+authors:
+  - family-names: Coleman
+    given-names: Manuel
+repository-code: "https://github.com/Manny536/excellence-engine-v4"
+url: "https://github.com/Manny536/excellence-engine-v4"
+abstract: >-
+  Excellence Engine V4 evaluates whether intelligence can preserve a typed
+  research object through evidence and correction without premature dismissal
+  or promotion. Ground: Kakeya as antecedent Riemann. Held. V4 = K→R · HELD.
+keywords:
+  - PeAIce
+  - KakeyaLogic
+  - L2_C
+  - Excellence Engine
+  - HELD
+  - conjecture custody
+license: MIT
+version: "4.0.0-r0"
+date-released: "2026-08-01"

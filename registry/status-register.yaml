@@ -1,0 +1,30 @@
+# Machine-readable status register
+version: 1
+updated: "2026-08-01"
+engine: "V4 = K→R · HELD"
+h: "< 1"
+entries:
+  - id: K_to_R_custody
+    status: HELD-RETAINED
+  - id: kakeya_R3_dimension
+    status: THEOREM-BACKGROUND
+  - id: sufficiency_packaging
+    status: CLOSED
+  - id: faithful_kappa
+    status: OPEN
+  - id: prime_carrying_L3
+    status: LIVE
+  - id: K_sigma_lane
+    status: CLOSED-NEGATIVE
+  - id: WP5b_bounded
+    status: CLOSED-NEGATIVE
+  - id: coleman
+    status: OPEN
+  - id: RH
+    status: OPEN
+  - id: outcomes_final_001
+    status: FINAL-PUBLIC-RESEARCH
+  - id: bd_ai_benchmark
+    status: OWED
+  - id: ii_measurement
+    status: OWED

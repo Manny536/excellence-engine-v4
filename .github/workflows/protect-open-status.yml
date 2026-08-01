@@ -1,0 +1,10 @@
+name: protect-open-status
+on: [push, pull_request]
+jobs:
+  open:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: OPEN regression
+        run: |
+          python -c "from pathlib import Path; t=Path('STATUS.md').read_text().lower(); assert 'rh proved' not in t; assert 'coleman proved' not in t; assert 'open' in t; print('ok')"

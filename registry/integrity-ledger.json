@@ -1,0 +1,23 @@
+{
+  "designation": "PEAICE-EEV4-OUTCOMES-INTEGRITY-001",
+  "updated": "2026-08-01",
+  "pins": [
+    {
+      "id": "outcomes-final-pdf",
+      "sha256": "02afcd170b49ab130f2783b540b6991f55c1235ee38ddaaad8887a7016c83930"
+    },
+    {
+      "id": "outcomes-final-docx",
+      "sha256": "edeb257a0c2195647d6e72e64c6e3c5e097c0d177eca30896390d8ec262df33d"
+    },
+    {
+      "id": "grok-rundown-md",
+      "sha256": "1f1633a9990e7bdccac05f31d07db208613070341c683e1ea83ad6d890e0c2d3"
+    },
+    {
+      "id": "grok-rundown-docx",
+      "sha256": "bb99e6404866857cdad3e9328c1c1fd16440ac592478d758d8cfb4e6a8282e31"
+    }
+  ],
+  "note": "Hashes pin controlling/companion artifacts on kakeyalogic; this repo does not re-host the controlling full memorandum."
+}
