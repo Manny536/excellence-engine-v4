@@ -1,15 +1,24 @@
 #!/usr/bin/env python3
-"""Claim status probe — OPEN seals must remain OPEN in status-register.yaml text."""
+"""Validate the exact claim-ID/status contract."""
 from __future__ import annotations
-from pathlib import Path
+
 import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from eev4.validation import load_json, validate_status_register
+
 
 def main() -> int:
-    text = (Path(__file__).resolve().parents[1] / "registry/status-register.yaml").read_text()
-    ok = ("id: RH" in text and "status: OPEN" in text and
-          "id: coleman" in text and "status: CLOSED-NEGATIVE" in text)
-    print(json.dumps({"probe": "claim_status", "ok": ok}))
-    return 0 if ok else 1
+    register = load_json("registry/status-register.yaml")
+    errors = validate_status_register(register)
+    result = {"probe": "claim_status", "ok": not errors, "errors": errors}
+    print(json.dumps(result, indent=2))
+    return 0 if result["ok"] else 1
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
