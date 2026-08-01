@@ -1,0 +1,40 @@
+{
+  "control_id": "premature-dismissal-001",
+  "failure_mode": "premature_dismissal",
+  "input_trace": {
+    "case_id": "control",
+    "designation": "PEAICE-EEV4-CONTROL",
+    "object": {
+      "id": "K_to_R",
+      "label": "Kakeya as antecedent Riemann",
+      "kind": "PROPOSED_RESEARCH_OBJECT",
+      "formulation": "Kakeya incidence is held as proposed prior structure."
+    },
+    "state": "HELD-RELEASED",
+    "status_tags": [
+      "HELD",
+      "PROPOSED",
+      "OPEN:RH",
+      "OPEN:Coleman"
+    ],
+    "h_eval": {
+      "bound": "< 1",
+      "passed": true
+    },
+    "evidence": {
+      "supporting": [],
+      "counter": []
+    },
+    "falsifier": "Exact non-Kakeya Xi carrier.",
+    "source_refs": [
+      "https://github.com/Manny536/kakeyalogic",
+      "https://github.com/Manny536/claude-v6"
+    ]
+  },
+  "expected_errors": [
+    "fail:evidence_supporting",
+    "fail:evidence_counter",
+    "fail:correction",
+    "fail:release_basis"
+  ]
+}
