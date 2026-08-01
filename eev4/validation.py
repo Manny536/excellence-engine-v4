@@ -229,8 +229,11 @@ def validate_control_case(control: dict[str, Any]) -> list[str]:
 
     actual = set(validate_held_trace(trace))
     missing = set(expected) - actual
+    unexpected = actual - set(expected)
     if missing:
         errors.extend(f"control:missing_expected:{item}" for item in sorted(missing))
+    if unexpected:
+        errors.extend(f"control:unexpected_error:{item}" for item in sorted(unexpected))
     if not actual:
         errors.append("control:unexpected_pass")
     return errors
