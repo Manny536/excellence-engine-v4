@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
+from referencing import Registry, Resource
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -14,8 +15,12 @@ def load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def errors_for(instance: dict, schema: dict) -> list[str]:
-    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+def errors_for(instance: dict, schema: dict, registry: Registry | None = None) -> list[str]:
+    validator = Draft202012Validator(
+        schema,
+        registry=registry or Registry(),
+        format_checker=FormatChecker(),
+    )
     return [
         f"{'/'.join(str(part) for part in error.absolute_path) or '$'}: {error.message}"
         for error in sorted(validator.iter_errors(instance), key=lambda item: list(item.absolute_path))
@@ -30,9 +35,13 @@ def main() -> int:
     for schema in (held_schema, outcome_schema, control_schema):
         Draft202012Validator.check_schema(schema)
 
+    registry = Registry().with_resource(
+        held_schema["$id"], Resource.from_contents(held_schema)
+    )
+
     outcome = load(ROOT / "benchmarks/cases/outcomes-001.json")
     reports = {
-        "outcomes-001": errors_for(outcome, outcome_schema),
+        "outcomes-001": errors_for(outcome, outcome_schema, registry),
         "outcomes-001/held_trace": errors_for(outcome.get("held_trace", {}), held_schema),
     }
     for path in sorted((ROOT / "benchmarks/controls").glob("*.json")):
