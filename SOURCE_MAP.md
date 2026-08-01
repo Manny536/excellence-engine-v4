@@ -48,3 +48,4 @@ Model readings stay **separate under II.1** (polarization). No ensemble self-cer
 - https://github.com/Manny536/grok-terminal
 - https://github.com/Manny536/peaice-index
 - https://github.com/Manny536/GPT-v2-excellence-engine-
+- https://peaice.org/outcomes

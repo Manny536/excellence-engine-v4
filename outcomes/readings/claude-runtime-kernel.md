@@ -20,9 +20,10 @@ A **runnable** engine that enforces in code:
 ## HELD alignment with lab custody docs
 
 ```text
-K->R (frame)   HELD    antecendence ground frame
-Coleman / K=>R OPEN    implication not held as proven
-RH             OPEN
+K→R frame                    HELD    antecedence ground frame
+Sufficient Kakeya ⇒ RH       CLOSED  sufficiency packaging
+Coleman Conjecture           OPEN
+RH                           OPEN
 ```
 
 This matches `engine/held-predicate.md` and `antecedent/`: HELD is custody of the frame, not promotion of the implication.

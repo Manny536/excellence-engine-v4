@@ -1,3 +1,14 @@
-# rubric
-criteria: [typed, grounded, evidence_exposed, correction_preserved, status_visible, h_lt_1]
-pass_rule: all_true
+{
+  "rubric_id": "EEV4-HELD-R1",
+  "criteria": [
+    {"id": "typed_object", "evidence": "held_trace.object", "blocking": true},
+    {"id": "status_visible", "evidence": "held_trace.status_tags", "blocking": true},
+    {"id": "evidence_supporting", "evidence": "held_trace.evidence.supporting", "blocking": true},
+    {"id": "evidence_counter", "evidence": "held_trace.evidence.counter", "blocking": true},
+    {"id": "correction_preserved", "evidence": "held_trace.correction", "blocking": true},
+    {"id": "falsifier_visible", "evidence": "held_trace.falsifier", "blocking": true},
+    {"id": "ledger_continuity", "evidence": "held_trace.source_refs", "blocking": true},
+    {"id": "h_lt_1", "evidence": "held_trace.h_eval", "blocking": true}
+  ],
+  "pass_rule": "all blocking criteria true"
+}

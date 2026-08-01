@@ -5,6 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: JSON cases parse
-        run: |
-          python -c "import json,glob; [json.load(open(p)) for p in glob.glob('benchmarks/cases/*.json')+glob.glob('benchmarks/schemas/*.json')+glob.glob('outcomes/artifacts/*.json')+glob.glob('registry/*.json')]; print('ok')"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install schema validator
+        run: pip install -r requirements-dev.txt
+      - name: Validate R1 schemas and instances
+        run: python probes/schema_validation_probe.py

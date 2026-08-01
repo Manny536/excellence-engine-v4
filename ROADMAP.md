@@ -2,7 +2,7 @@
 
 ## Release stages
 
-### R0 — First release (this commit)
+### R0 — First release (complete)
 
 1. Root README and STATUS
 2. Engine definition + HELD predicate + transitions
@@ -12,17 +12,18 @@
 6. One typed HELD → Outcome case
 7. Initial validation workflow
 
-### R1 — Evaluation surface
+### R1 — Evaluation surface (candidate)
 
-- Full evaluation protocols + rubrics
-- Schema-validated benchmarks
-- Probe suite with tests
-- `protect-open-status` CI gate
+- [x] Full evaluation protocols + blocking rubrics
+- [x] Schema-validated Outcomes case and HELD trace
+- [x] Criteria-explicit probe suite with regression tests
+- [x] `protect-open-status` CI gate
+- [x] Declared negative controls for dismissal, promotion, and evidence insulation
 
 ### R2 — Multi-case benchmarks
 
 - BD-AI multi-case corpus
-- Premature dismissal / promotion controls
+- Expand matched controls beyond the R1 seed set
 - Cross-model reading register (Grok · Claude · Solance)
 
 ### R3 — Public V4 site

@@ -11,6 +11,7 @@
 V4 = K→R · HELD
 Public seal: Kakeya as antecedent Riemann. Held.
 Engine: ACTIVE
+Evaluation surface: R1-CANDIDATE
 Field substrate (V3): KakeyaLogic — carried forward
 Theorem ledger: claude-v6 V6.5
 Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
@@ -30,6 +31,8 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 | Square-difference K_σ | `CLOSED-NEGATIVE` | Order/genus/density |
 | WP5b bounded | `CLOSED-NEGATIVE` | Theorem H |
 | PeAIce Outcomes FINAL-001 | FINAL PUBLIC RESEARCH | Not peer reviewed |
+| Outcomes HELD trace | `HELD-RETAINED` / R1-CANDIDATE | Typed, schema-validated reference case |
+| Negative controls | R1-CANDIDATE | Dismissal · promotion · evidence insulation |
 | BD-AI multi-case benchmark | `OWED` | Two qualitative cases registered elsewhere |
 | II.1 measurement badge | `OWED` | Definitions FORMAL |
 | RH | `OPEN` | |
@@ -40,14 +43,14 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 1. Keep OPEN targets OPEN on every public surface.
 2. Twin V4 status into claude-v6 ledger (downstream pin OWED).
 3. Preserve Outcomes SHA-256 pins; do not re-host the full memo as controlling.
-4. Advance one typed `HELD → Outcome` case with machine-readable trace.
+4. Advance the validated Outcomes trace into a BD-AI multi-case benchmark.
 5. Site content refresh when public EEV page should name V4 (publisher sync).
 
 ## Repository-head references
 
 | Ref | Location |
 |---|---|
-| This repo HEAD | `main` |
+| This repo release target | `R1-candidate` |
 | KakeyaLogic field | https://github.com/Manny536/kakeyalogic |
 | Claude V6 ledger | https://github.com/Manny536/claude-v6 |
 | Outcomes public | https://peaice.org/outcomes |

@@ -13,10 +13,10 @@ abstract: >-
 keywords:
   - PeAIce
   - KakeyaLogic
-  - L2_C
+  - "L²_C"
   - Excellence Engine
   - HELD
   - conjecture custody
 license: MIT
-version: "4.0.0-r0"
+version: "4.1.0-r1"
 date-released: "2026-08-01"

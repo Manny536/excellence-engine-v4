@@ -1,3 +1,12 @@
-# rubric
-criteria: [object_firewall, six_findings_present, open_seals_visible, no_proof_claim]
-pass_rule: all_true
+{
+  "rubric_id": "EEV4-OUTCOMES-R1",
+  "criteria": [
+    {"id": "object_firewall", "evidence": "held_trace.object", "blocking": true},
+    {"id": "six_findings", "evidence": "findings", "blocking": true},
+    {"id": "open_seals", "evidence": "open_seals", "blocking": true},
+    {"id": "artifact_pins", "evidence": "artifact_ids", "blocking": true},
+    {"id": "public_trace", "evidence": "public_url", "blocking": true},
+    {"id": "held_trace", "evidence": "held_trace", "blocking": true}
+  ],
+  "pass_rule": "all blocking criteria true and no OPEN claim promoted"
+}

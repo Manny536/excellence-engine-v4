@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the HELD trace embedded in the real Outcomes case."""
+"""Validate PeAIce Outcomes as the first-class EEV4 case."""
 from __future__ import annotations
 
 import json
@@ -9,17 +9,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from eev4.validation import load_json, validate_held_trace
+from eev4.validation import load_json, validate_outcome_case
 
 
 def main() -> int:
     case = load_json("benchmarks/cases/outcomes-001.json")
-    trace = case.get("held_trace", {})
-    errors = validate_held_trace(trace) if isinstance(trace, dict) else ["fail:trace_type"]
+    errors = validate_outcome_case(case)
     result = {
-        "probe": "held_trace",
+        "probe": "outcome_case",
         "case_id": case.get("case_id"),
-        "state": trace.get("state") if isinstance(trace, dict) else None,
         "ok": not errors,
         "errors": errors,
     }

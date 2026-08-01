@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Manny536/excellence-engine-v4/benchmarks/schemas/control-case.schema.json",
+  "title": "HELDControlCase",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["control_id", "failure_mode", "input_trace", "expected_errors"],
+  "properties": {
+    "control_id": {"type": "string", "minLength": 1},
+    "failure_mode": {
+      "type": "string",
+      "enum": ["premature_dismissal", "premature_promotion", "evidence_insulation"]
+    },
+    "input_trace": {"type": "object"},
+    "expected_errors": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    }
+  }
+}
