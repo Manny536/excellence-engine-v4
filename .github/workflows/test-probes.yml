@@ -8,16 +8,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: run probes
-        run: |
-          python probes/held_trace_probe.py
-          python probes/object_identity_probe.py
-          python probes/claim_status_probe.py
-          python probes/evidence_exposure_probe.py
-          python probes/correction_survival_probe.py
-          python probes/ledger_continuity_probe.py
-          python probes/artifact_integrity_probe.py
-      - name: pytest
-        run: |
-          pip install pytest
-          pytest -q
+          cache: pip
+      - name: Install validation dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Run EEV4 probe suite
+        run: python probes/run_all.py
+      - name: Run regression tests
+        run: pytest -q
