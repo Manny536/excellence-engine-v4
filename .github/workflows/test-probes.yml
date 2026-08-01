@@ -10,7 +10,7 @@ jobs:
           python-version: "3.12"
           cache: pip
       - name: Install validation dependencies
-        run: pip install -r requirements-dev.txt
+        run: pip install -e . -r requirements-dev.txt
       - name: Run EEV4 probe suite
         run: python probes/run_all.py
       - name: Run regression tests

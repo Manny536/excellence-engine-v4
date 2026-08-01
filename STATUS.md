@@ -55,3 +55,15 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 | Claude V6 ledger | https://github.com/Manny536/claude-v6 |
 | Outcomes public | https://peaice.org/outcomes |
 | EEV public (historical surface) | https://peaice.org/eev3 |
+
+## Runnable kernel
+
+| Object | Status |
+|---|---|
+| Formula spine E, R, h < 1, R < 1 | FORMAL (runtime-enforced) |
+| Firewall guards (ζ transport, NP analogy, Metric) | FORMAL (runtime-enforced) |
+| Factor operationalisations L², β, C, P, d, c, e | PROPOSED — ratify or replace |
+| Package PROGRAM_STATE K→R frame | HELD |
+| Package PROGRAM_STATE Coleman / RH | OPEN |
+
+Source: Claude-authored package integrated 2026-08-01 · `excellence_engine_v4/`

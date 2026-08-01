@@ -5,7 +5,7 @@ Protocols implement HELD and Outcomes as research procedures. Rubrics score case
 Run the complete executable counterpart from the repository root:
 
 ```bash
-pip install -r requirements-dev.txt
+pip install -e . -r requirements-dev.txt
 python probes/run_all.py
 pytest -q
 ```

@@ -52,6 +52,41 @@ V4 = V3 + HELD
 
 ---
 
+## Runnable kernel (Claude package · integrated 2026-08-01)
+
+Governance-hardened **scoring engine** lives as an installable Python package:
+
+```text
+excellence_engine_v4/   status · firewall · factors · engine
+run_demo.py
+tests/test_engine.py
+pyproject.toml
+```
+
+```bash
+pip install -e ".[test]"
+python run_demo.py
+pytest -q tests/test_engine.py   # 31 tests (FORMAL spine + firewall)
+```
+
+| Formula | Form |
+|---|---|
+| Excellence | `E = L² · β · C · P` |
+| Integrity | `R = d · c · e · h` with **`h < 1` enforced** → **`R < 1` always** |
+
+Runtime closes three v3 seams in code (not prose):
+
+1. Headline numbers must be `Metric(value, counted, population, source)` — bare floats raise.
+2. NP framing only as fenced `Analogy` — `.as_mechanism()` raises.
+3. ζ(0)=−½ may not bind as domain coordinate — `bind_domain_coordinate` raises (CLOSED-NEGATIVE transport).
+
+**PROGRAM_STATE** (package): RH OPEN · Coleman OPEN · **K→R frame HELD** · zeta transport CLOSED-NEGATIVE · NP-as-mechanism CLOSED-NEGATIVE.
+
+Factor operationalisations = **PROPOSED**. Provenance: [`excellence_engine_v4/PROVENANCE.md`](excellence_engine_v4/PROVENANCE.md) · package notes: Claude runtime README concepts retained in that module docstring stack.
+
+Custody docs under `engine/` remain the HELD architecture layer; this package is the **executable enforcement** of h, typing, and firewall.
+
+
 ## Outcomes position
 
 Outcomes is a **first-class structural layer** in this repo (`outcomes/`), not an appendix.
@@ -85,7 +120,7 @@ R1 turns HELD from a documented predicate into an executable custody contract:
 Run the complete surface:
 
 ```bash
-python -m pip install -r requirements-dev.txt
+python -m pip install -e . -r requirements-dev.txt
 python probes/run_all.py
 pytest -q
 ```

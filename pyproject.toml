@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excellence-engine-v4"
+version = "4.0.0"
+description = "PeAIce Excellence Engine v4 - governance-hardened scoring engine (E=L^2*beta*C*P, R=d*c*e*h, h<1)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Manuel Coleman", email = "manny@peaice.org" }]
+keywords = ["PeAIce", "KakeyaLogic", "excellence-engine", "governance", "L2C"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["excellence_engine_v4*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
