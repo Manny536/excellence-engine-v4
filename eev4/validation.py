@@ -10,16 +10,9 @@ import json
 from pathlib import Path
 from typing import Any
 
-ROOT = Path(__file__).resolve().parents[1]
+from excellence_engine_v4.status import HELD_STATES
 
-HELD_STATES = {
-    "RECEIVED",
-    "HELD-ACTIVE",
-    "HELD-REVISED",
-    "HELD-RETAINED",
-    "HELD-RELEASED",
-    "HELD-CLOSED",
-}
+ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_STATUS = {
     "K_to_R_custody": "HELD-RETAINED",
