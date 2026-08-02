@@ -16,7 +16,7 @@ keywords = ["PeAIce", "KakeyaLogic", "excellence-engine", "governance", "L2C"]
 test = ["pytest>=7"]
 
 [tool.setuptools.packages.find]
-include = ["excellence_engine_v4*"]
+include = ["excellence_engine_v4*", "eev4*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
