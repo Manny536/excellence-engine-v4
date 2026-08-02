@@ -20,8 +20,8 @@ A **runnable** engine that enforces in code:
 ## HELD alignment with lab custody docs
 
 ```text
-K→R frame                    HELD    antecedence ground frame
-Sufficient Kakeya ⇒ RH       CLOSED  sufficiency packaging
+K→R frame                    HELD-RETAINED  antecedence retained as ground frame
+Sufficient Kakeya ⇒ RH       CLOSED         sufficiency packaging
 Coleman Conjecture           OPEN
 RH                           OPEN
 ```
@@ -33,6 +33,6 @@ This matches `engine/held-predicate.md` and `antecedent/`: HELD is custody of th
 1. d, c, e R-slot expansions  
 2. C vs L² split  
 3. P slot meaning (CUP default)  
-4. Confirm HELD = frame (not implication) — **already correct in PROGRAM_STATE**
+4. Confirm HELD-RETAINED = frame custody (not implication) — **carried by PROGRAM_STATE and the shared enum**
 
 Grok TERMINAL cross-derivation on PROPOSED factors remains OWED under h < 1.

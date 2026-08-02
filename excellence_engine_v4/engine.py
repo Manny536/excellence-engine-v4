@@ -16,7 +16,7 @@ from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from typing import Any
 
-from .status import ClaimLedger, Status
+from .status import ClaimLedger, HeldState, Status
 from .firewall import FIREWALL_CANON, Analogy, Metric, require_h_below_one
 from . import factors as F
 
@@ -27,7 +27,7 @@ VERSION = "4.0.0"
 PROGRAM_STATE: dict[str, dict[str, str]] = {
     "RH":                {"status": Status.OPEN.value,            "note": "Riemann Hypothesis"},
     "Coleman":           {"status": Status.OPEN.value,            "note": "Kakeya => RH (the implication)"},
-    "K->R (frame)":      {"status": "HELD",                       "note": "antecedence held as ground frame, NOT the implication"},
+    "K->R (frame)":      {"status": HeldState.RETAINED.value,      "note": "antecedence retained as ground frame, NOT the implication"},
     "002.A-strong":      {"status": Status.OPEN.value,            "note": "strong carrier-capture form"},
     "C_3":               {"status": Status.OPEN.value,            "note": "3-D compression rate"},
     "zeta(0) transport": {"status": Status.CLOSED_NEGATIVE.value, "note": "codomain value -> domain coordinate: type error"},
