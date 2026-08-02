@@ -55,3 +55,13 @@ paper register; the PDFs are not vendored.
 - https://github.com/Manny536/peaice-index
 - https://github.com/Manny536/GPT-v2-excellence-engine-
 - https://peaice.org/outcomes
+
+## Meta Thinking Machine
+
+| Artifact | Path |
+|---|---|
+| Interactive HTML | `docs/meta/PeAIce-Thinking-Machine-V4-Wired-Telemetry.html` |
+| Site mirror | `site/artifacts/meta/thinking-machine-v4-wired-telemetry.html` |
+| Companion FINAL | `docs/meta/PeAIce_V4_Meta_Thinking_Machine_Companion_FINAL.docx` |
+| Companion MD | `docs/meta/PeAIce_V4_Meta_Thinking_Machine_Companion_FINAL.md` |
+| Pack source | local `Downloads/Research/Meta(eev4)/` |

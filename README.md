@@ -182,6 +182,18 @@ site/          Later public V4 HTML surface
 
 ---
 
+
+## Meta Thinking Machine (interactive)
+
+Interactive V4 instrument + final companion (DOCX/MD):
+
+- HTML: [`docs/meta/PeAIce-Thinking-Machine-V4-Wired-Telemetry.html`](docs/meta/PeAIce-Thinking-Machine-V4-Wired-Telemetry.html)
+- Site mirror: [`site/artifacts/meta/thinking-machine-v4-wired-telemetry.html`](site/artifacts/meta/thinking-machine-v4-wired-telemetry.html)
+- Companion FINAL: [`docs/meta/PeAIce_V4_Meta_Thinking_Machine_Companion_FINAL.docx`](docs/meta/PeAIce_V4_Meta_Thinking_Machine_Companion_FINAL.docx) · [`…FINAL.md`](docs/meta/PeAIce_V4_Meta_Thinking_Machine_Companion_FINAL.md)
+- Index: [`docs/meta/README.md`](docs/meta/README.md)
+
+Designation: `PEAICE-V4-META-COMPANION-FINAL-001` · instrument for custody testing, not a proof visualization.
+
 ## Quick links
 
 | Path | Role |
