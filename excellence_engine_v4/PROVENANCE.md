@@ -13,9 +13,10 @@ This package is the **runnable kernel** of Excellence Engine V4. It does not rep
 ## HELD reading (load-bearing)
 
 ```text
-K->R (frame)   HELD     antecedence held as ground frame
-Coleman / K=>R OPEN     the implication stays open
-RH             OPEN
+K→R frame                    HELD-RETAINED  antecedence retained as ground frame
+Sufficient Kakeya ⇒ RH       CLOSED         sufficiency packaging
+Coleman Conjecture           OPEN
+RH                           OPEN
 ```
 
 Factor operationalisations are **PROPOSED**. Formula spine, h < 1, firewall guards, and stamp are **FORMAL** in the package's own claim language (runtime enforcement), still under program h < 1 for mathematical promotion.
