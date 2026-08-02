@@ -19,7 +19,13 @@ FORBIDDEN = {
 
 
 def main() -> int:
-    public_paths = [ROOT / "README.md", ROOT / "STATUS.md", *sorted((ROOT / "site").glob("*.html"))]
+    public_paths = [
+        ROOT / "README.md",
+        ROOT / "STATUS.md",
+        *sorted((ROOT / "antecedent").glob("*.md")),
+        *sorted((ROOT / "references").glob("*.md")),
+        *sorted((ROOT / "site").glob("*.html")),
+    ]
     violations = []
     for path in public_paths:
         text = path.read_text(encoding="utf-8")
