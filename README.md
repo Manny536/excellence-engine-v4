@@ -182,6 +182,7 @@ site/          Later public V4 HTML surface
 |---|---|
 | [`engine/excellence-engine-v4.md`](engine/excellence-engine-v4.md) | Controlling V4 definition |
 | [`outcomes/README.md`](outcomes/README.md) | Outcomes layer |
+| [`antecedent/README.md`](antecedent/README.md) | Controlling antecedent types and inference contract |
 | [`antecedent/kakeya-as-antecedent-riemann.md`](antecedent/kakeya-as-antecedent-riemann.md) | Ground statement |
 | [`SOURCE_MAP.md`](SOURCE_MAP.md) | Cross-repo ownership |
 | [`references/README.md`](references/README.md) | Seven-paper evidence and citation surface |
