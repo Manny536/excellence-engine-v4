@@ -1,7 +1,7 @@
 # STATUS — Excellence Engine V4
 
 **Repository:** `Manny536/excellence-engine-v4`  
-**Updated:** 2026-08-01  
+**Updated:** 2026-08-02
 **Controlling designation:** `PEAICE-KAKEYALOGIC-EEV4-HELD-001`  
 **Discipline:** `h < 1` · RH OPEN · Coleman OPEN
 
@@ -31,9 +31,12 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 | Square-difference K_σ | `CLOSED-NEGATIVE` | Order/genus/density |
 | WP5b bounded | `CLOSED-NEGATIVE` | Theorem H |
 | PeAIce Outcomes FINAL-001 | FINAL PUBLIC RESEARCH | Not peer reviewed |
-| Outcomes HELD trace | `HELD-RETAINED` / R1-CANDIDATE | Typed, schema-validated reference case |
+| Outcomes architecture | `FORMAL` | Typed receipt, transition, authority, and publication contract |
+| Outcomes HELD trace | `HELD-RETAINED` / VALIDATED | Typed, schema-validated reference case |
 | Negative controls | R1-CANDIDATE | Dismissal · promotion · evidence insulation |
-| BD-AI multi-case benchmark | `OWED` | Two qualitative cases registered elsewhere |
+| BD-AI cases | `REGISTERED-QUALITATIVE` | Two paired observations across source ledgers |
+| BD-AI trajectory reference | `SOURCE-REGISTERED` | Christchurch/Buffalo retrospective public records |
+| BD-AI multi-case benchmark | `OWED` | Preregistered controls, raters, and intervention-harm measures owed |
 | II.1 measurement badge | `OWED` | Definitions FORMAL |
 | RH | `OPEN` | |
 | Coleman Conjecture | `OPEN` | |
@@ -43,8 +46,9 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 1. Keep OPEN targets OPEN on every public surface.
 2. Twin V4 status into claude-v6 ledger (downstream pin OWED).
 3. Preserve Outcomes SHA-256 pins; do not re-host the full memo as controlling.
-4. Advance the validated Outcomes trace into a BD-AI multi-case benchmark.
-5. Site content refresh when public EEV page should name V4 (publisher sync).
+4. Advance the validated Outcomes trace and BD-AI Case 01 into a preregistered multi-case benchmark.
+5. Test trajectory recognition without person-level profiling, covert monitoring, or needless amplification.
+6. Site content refresh when public EEV page should name V4 (publisher sync).
 
 Paper keys, exact citations, source-snapshot hashes, and use boundaries:
 [`references/README.md`](references/README.md) ·

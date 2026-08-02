@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "designation": "PEAICE-EEV4-BD-EVIDENCE-001",
+  "registered": "2026-08-02",
+  "policy": "Session-supplied snapshots are integrity-pinned and source-classed but not vendored. Primary locators carry evidentiary authority where available.",
+  "research_boundary": "The evidence motivates controlled sequence-aware AI-response evaluation. It does not authorize person-level diagnosis, surveillance, prediction, punishment, or reproduction of harmful source material.",
+  "sources": [
+    {
+      "id": "SRC-BD-FIELD",
+      "source_class": "research-draft",
+      "locator": "https://github.com/Manny536/kakeyalogic/blob/main/docs/benevolence-drift.md",
+      "role": "Benevolence Drift definition, Case 01 provenance, and correction gate",
+      "claim_boundary": "Qualitative field record; multi-case benchmark remains owed."
+    },
+    {
+      "id": "SRC-NYAG-BUFFALO",
+      "source_class": "official-investigative-report",
+      "locator": "https://ag.ny.gov/sites/default/files/buffaloshooting-onlineplatformsreport.pdf",
+      "role": "Retrospective sequence across online exposure, planning, broadcasting, amplification, and platform response",
+      "claim_boundary": "Official case evidence; does not validate an EEV4 deployment policy."
+    },
+    {
+      "id": "SRC-JFD-BUFFALO",
+      "source_class": "scholarly-case-study",
+      "locator": "https://jd.journals.publicknowledgeproject.org/index.php/jd/article/view/737",
+      "role": "Source-overlap analysis of a published rationale and associated images",
+      "claim_boundary": "Single-case source study; no population prevalence claim."
+    },
+    {
+      "id": "SRC-WILSON-CHRISTCHURCH",
+      "source_class": "peer-reviewed-trajectory-study",
+      "locator": "https://doi.org/10.1080/13537113.2025.2461347",
+      "role": "Authenticated multi-year online-record and ideology-to-action analysis",
+      "claim_boundary": "Retrospective attribution depends on the authors' authentication method and does not validate live anonymous-user identification."
+    },
+    {
+      "id": "SRC-TIME-MOVEMENT",
+      "source_class": "secondary-journalism",
+      "locator": "https://time.com/6177260/buffalo-shooting-online-extremism/",
+      "role": "Cross-attack ideological imitation and online movement context",
+      "claim_boundary": "Contextual reporting subordinate to primary and scholarly sources for load-bearing claims."
+    },
+    {
+      "id": "SRC-SUPPLIED-CONTEXT",
+      "source_class": "session-supplied-screenshot",
+      "locator": null,
+      "role": "Research framing, deck excerpts, and contextual news captures",
+      "claim_boundary": "Process/context receipt only; unresolved screenshots do not replace an underlying primary source."
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "BD-SNAP-01",
+      "provided_name": "Image 7-31-26 at 4.45 PM.png",
+      "sha256": "d10059207722b0b09d1f702f205010e408d7dae4d8622fa737280b45dc097006",
+      "media_type": "image/png",
+      "dimensions": [610, 1298],
+      "source_id": "SRC-BD-FIELD",
+      "role": "long-form trajectory-recognition and black-box research framing",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-02",
+      "provided_name": "Image 7-31-26 at 4.44 PM.png",
+      "sha256": "a42ffcc9b23d71276bc20ad3e194e14e7375c971660e7ac16f9d2634dbd2d77e",
+      "media_type": "image/png",
+      "dimensions": [583, 639],
+      "source_id": "SRC-BD-FIELD",
+      "role": "Benevolence Drift opening definition and pre-threshold question",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-03",
+      "provided_name": "Image.png (Benevolence Drift infographic)",
+      "sha256": "12c9aae74e67ea7be7da602cbedb0150addd997cdcb3ad8bbe82f22e0bffef23",
+      "media_type": "image/png",
+      "dimensions": [1024, 1536],
+      "source_id": "SRC-BD-FIELD",
+      "role": "public visual synthesis of surface benevolence, trajectory recognition, case boundary, and falsifiable direction",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-04",
+      "provided_name": "Image 7-31-26 at 4.11 PM.png",
+      "sha256": "0854b392c1179516d346e49b6285c2b4768b7e4aff7c71f73836abfb4cd16138",
+      "media_type": "image/png",
+      "dimensions": [647, 78],
+      "source_id": "SRC-TIME-MOVEMENT",
+      "role": "secondary excerpt noting modeled behavior and writings across prior attacks",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-05",
+      "provided_name": "Screenshot 2026-07-31 at 4.09.13 PM.png",
+      "sha256": "02f5b88c546ae61032cfc2a5e2b60debaefb54bccc94af1ac941ba3c4959284f",
+      "media_type": "image/png",
+      "dimensions": [858, 238],
+      "source_id": "SRC-SUPPLIED-CONTEXT",
+      "role": "secondary article excerpt on cross-attack blueprint and online radicalization",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-06",
+      "provided_name": "Image 7-31-26 at 4.08 PM.png",
+      "sha256": "e30b7966fc34e1ec13a61a5ec92ee3dda4879a089e36acc210972b36ba83706a",
+      "media_type": "image/png",
+      "dimensions": [858, 861],
+      "source_id": "SRC-SUPPLIED-CONTEXT",
+      "role": "secondary article excerpt on copied text, ideological source material, and extended planning record",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-07",
+      "provided_name": "Image 7-21-26 at 2.04 PM.png",
+      "sha256": "a735678ce68e6c966f9b9cdaed4b3547a5f23639fdb64937445866c9faca7859",
+      "media_type": "image/png",
+      "dimensions": [1621, 834],
+      "source_id": "SRC-JFD-BUFFALO",
+      "role": "Journal for Deradicalization excerpt on source overlap and image hosting",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-08",
+      "provided_name": "IMG_8102.jpeg",
+      "sha256": "bbc557813398e3acfb7684f546ad0b03e3aacc3dba46e555aadf96da06c16b84",
+      "media_type": "image/jpeg",
+      "dimensions": [2412, 3014],
+      "source_id": "SRC-NYAG-BUFFALO",
+      "role": "official-report cover and excerpts on fringe platforms, livestreaming, and platform accountability",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-09",
+      "provided_name": "Image.png (BD case synthesis)",
+      "sha256": "3cc6d7af4e77f2575f0a679c4a85fe75d5d59b2b99aec386fbb8e52062d0d2b9",
+      "media_type": "image/png",
+      "dimensions": [474, 626],
+      "source_id": "SRC-BD-FIELD",
+      "role": "seven-link Case 01 synthesis and observed-drift statement",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-10",
+      "provided_name": "Image 7-16-26 at 10.47 AM.png",
+      "sha256": "6f3c787b3ed7db8cb105e053ece40a1bb3a8c2c340a35db1ed66d686a2ccb32f",
+      "media_type": "image/png",
+      "dimensions": [1913, 989],
+      "source_id": "SRC-BD-FIELD",
+      "role": "threshold feature and scoring-deck excerpt",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-11",
+      "provided_name": "Image 7-16-26 at 10.41 AM (1).png",
+      "sha256": "f67a50218f7e4a75f8b807a231098d12ea95ba1b4bc3f8217291bf6b00acd878",
+      "media_type": "image/png",
+      "dimensions": [1725, 982],
+      "source_id": "SRC-BD-FIELD",
+      "role": "Case 01 paired-turn snapshot showing direct classification after binary pressure",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-12",
+      "provided_name": "Image 7-16-26 at 10.54 AM.png",
+      "sha256": "13658cfe4e640743b24434af04cd0f6cc4226288d1076793c3f166953cbd2e14",
+      "media_type": "image/png",
+      "dimensions": [1413, 773],
+      "source_id": "SRC-SUPPLIED-CONTEXT",
+      "role": "contextual news capture of the Buffalo criminal case",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-13",
+      "provided_name": "Image 7-16-26 at 10.56 AM.png",
+      "sha256": "ddb3bb69b6eb2c779f335930b75106b5f10b3833e96f84f34f61524bdc0f4696",
+      "media_type": "image/png",
+      "dimensions": [1115, 852],
+      "source_id": "SRC-SUPPLIED-CONTEXT",
+      "role": "contextual news capture of the Charleston criminal case and cross-attack reference",
+      "vendored": false
+    },
+    {
+      "id": "BD-SNAP-14",
+      "provided_name": "Image 7-16-26 at 11.01 AM.png",
+      "sha256": "19176a092910d45758cf5b6ee4856338108e43baa20fa7f7fec5d9b072c9ccca",
+      "media_type": "image/png",
+      "dimensions": [1272, 733],
+      "source_id": "SRC-WILSON-CHRISTCHURCH",
+      "role": "research-summary excerpt on multi-year anonymous posting, explicit intent, and pre-attack public signals",
+      "vendored": false
+    }
+  ]
+}

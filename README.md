@@ -111,9 +111,11 @@ R1 turns HELD from a documented predicate into an executable custody contract:
 
 - the PeAIce Outcomes case carries a typed object, evidence on both sides, a visible
   correction, a falsifier, source pins, and exact OPEN seals;
+- the BD-AI case carries an observable threshold, paired-turn pressure gap, explicit
+  no-hidden-state boundary, falsifiers, and consent-bounded response rail;
 - three negative controls test premature dismissal, premature promotion, and evidence
   insulation;
-- JSON Schema, criteria-explicit validators, regression tests, and four CI workflows
+- JSON Schema, criteria-explicit validators, regression tests, and six CI workflows
   protect the same contract;
 - every passing result is a custody receipt, never a theorem status.
 
@@ -132,7 +134,7 @@ pytest -q
 | Object | Status |
 |---|---|
 | Kakeya sets in ℝ³ (full dim) | `THEOREM-BACKGROUND` |
-| Kakeya as structural antecedent of Riemann control | `HELD` + `PROPOSED` |
+| Kakeya as structural antecedent of Riemann control | `PROPOSED` |
 | Sufficient `Kakeya ⇒ RH` packaging | `CLOSED` |
 | Faithful κ bridge | `OPEN` |
 | Prime-carrying exact-zero route | `LIVE` |
@@ -142,6 +144,10 @@ pytest -q
 | Riemann Hypothesis | `OPEN` |
 | HELD custody of K→R | `HELD-RETAINED` |
 | PeAIce Outcomes FINAL-001 | FINAL PUBLIC RESEARCH · not peer reviewed |
+| Outcomes architecture | `FORMAL` |
+| BD-AI cases | `REGISTERED-QUALITATIVE` |
+| BD-AI trajectory reference | `SOURCE-REGISTERED` |
+| BD-AI multi-case benchmark | `OWED` |
 | `h` | `< 1` |
 
 Full live register: [`STATUS.md`](STATUS.md) · machine form: [`registry/status-register.yaml`](registry/status-register.yaml)
@@ -181,7 +187,9 @@ site/          Later public V4 HTML surface
 | Path | Role |
 |---|---|
 | [`engine/excellence-engine-v4.md`](engine/excellence-engine-v4.md) | Controlling V4 definition |
-| [`outcomes/README.md`](outcomes/README.md) | Outcomes layer |
+| [`outcomes/README.md`](outcomes/README.md) | Controlling Outcomes types and receipt contract |
+| [`outcomes/benevolence-drift.md`](outcomes/benevolence-drift.md) | BD-AI threshold and trajectory-recognition contract |
+| [`benchmarks/cases/bd-ai-case-01.json`](benchmarks/cases/bd-ai-case-01.json) | Typed Benevolence Drift paired-turn case |
 | [`antecedent/README.md`](antecedent/README.md) | Controlling antecedent types and inference contract |
 | [`antecedent/kakeya-as-antecedent-riemann.md`](antecedent/kakeya-as-antecedent-riemann.md) | Ground statement |
 | [`SOURCE_MAP.md`](SOURCE_MAP.md) | Cross-repo ownership |
