@@ -24,6 +24,7 @@
 | Claude Outcomes pin | claude-v6 `docs/research/peaice-outcomes-grok-rundown.md` | this repo `outcomes/readings/claude-downstream-registration.md` |
 | Solance (GPT) V4 reading | this repo `outcomes/readings/solance-v4-reading.md` | lineage: GPT-v2-excellence-engine |
 | EEV4 definition | **this repo** `engine/excellence-engine-v4.md` | kakeyalogic PR #8 mirrors + points here |
+| External paper references | **this repo** `references/README.md` | `registry/paper-references.json` pins supplied snapshots by SHA-256 |
 
 ## Solance (GPT) & Lab structure
 
@@ -37,6 +38,10 @@ excellence-engine-v4  custody engine lab (HELD)  ← this repository
 ```
 
 Model readings stay **separate under II.1** (polarization). No ensemble self-certification.
+
+External papers are registered as evidence, not treated as sibling repositories or theorem
+ledger owners. Their primary locators and supplied-snapshot hashes live in the dedicated
+paper register; the PDFs are not vendored.
 
 
 ## Explicit repository URLs

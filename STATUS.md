@@ -22,8 +22,8 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 | Lane | Status | Notes |
 |---|---|---|
 | K→R custody | `HELD-RETAINED` | Revised from sufficient packaging |
-| Kakeya ℝ³ theorem | `THEOREM-BACKGROUND` | Wang–Zahl / Guth–Wang–Zahl |
-| Bound dependency tower | `KNOWN` / `THEOREM-BACKGROUND` | Restriction → decoupling → large values → density |
+| Kakeya ℝ³ theorem | `THEOREM-BACKGROUND` | Wang–Zahl [P3] / Guth–Wang–Zahl [P6] |
+| Bound dependency tower | `KNOWN` / `THEOREM-BACKGROUND` | Wang–Wu [P1] · restriction → decoupling → large values → density |
 | Sufficient K⇒RH | `CLOSED` | Sufficiency trap |
 | Faithful κ (CC-I style) | `OPEN` | Exact-location sensitivity owed |
 | Construction essential Kakeya (CC-O style) | `OPEN` | Essentiality / deletion test owed |
@@ -45,6 +45,10 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 3. Preserve Outcomes SHA-256 pins; do not re-host the full memo as controlling.
 4. Advance the validated Outcomes trace into a BD-AI multi-case benchmark.
 5. Site content refresh when public EEV page should name V4 (publisher sync).
+
+Paper keys, exact citations, source-snapshot hashes, and use boundaries:
+[`references/README.md`](references/README.md) ·
+[`registry/paper-references.json`](registry/paper-references.json).
 
 ## Repository-head references
 

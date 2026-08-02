@@ -32,7 +32,8 @@ def main() -> int:
     held_schema = load(schema_dir / "held-trace.schema.json")
     outcome_schema = load(schema_dir / "outcome-case.schema.json")
     control_schema = load(schema_dir / "control-case.schema.json")
-    for schema in (held_schema, outcome_schema, control_schema):
+    paper_reference_schema = load(schema_dir / "paper-reference.schema.json")
+    for schema in (held_schema, outcome_schema, control_schema, paper_reference_schema):
         Draft202012Validator.check_schema(schema)
 
     registry = Registry().with_resource(
@@ -43,6 +44,9 @@ def main() -> int:
     reports = {
         "outcomes-001": errors_for(outcome, outcome_schema, registry),
         "outcomes-001/held_trace": errors_for(outcome.get("held_trace", {}), held_schema),
+        "paper-references": errors_for(
+            load(ROOT / "registry/paper-references.json"), paper_reference_schema
+        ),
     }
     for path in sorted((ROOT / "benchmarks/controls").glob("*.json")):
         reports[path.stem] = errors_for(load(path), control_schema)

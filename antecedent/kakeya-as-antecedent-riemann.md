@@ -11,7 +11,7 @@ Kakeya-geometric incidence is held as **prior structure** in the proposed depend
 
 | Claim | Status |
 |---|---|
-| R^3 Kakeya full dimension | THEOREM-BACKGROUND |
+| R^3 Kakeya full dimension [P3, P6] | THEOREM-BACKGROUND |
 | Incidence feeds restriction / decoupling / large-value / density methods | KNOWN / THEOREM-BACKGROUND |
 | Methodological/structural antecedent of Riemann control | HELD + PROPOSED |
 | Kakeya by itself implies RH | CLOSED (sufficiency trap) |
@@ -19,3 +19,5 @@ Kakeya-geometric incidence is held as **prior structure** in the proposed depend
 | RH | OPEN |
 
 Expanded formal treatment: `engine/excellence-engine-v4.md` · kakeyalogic `docs/coleman-conjecture-antecedent.md`
+
+Paper keys and use boundaries: [`references/README.md`](../references/README.md).
