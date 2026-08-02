@@ -13,6 +13,7 @@ REGISTERING  records the object in an adjacent theorem or research ledger
 COMPANION    supplies an inspectable model-pole reading
 PUBLISHER    renders a public copy without changing status
 EVIDENCE     supports a scoped claim under its source boundary
+INSTRUMENT   executes a bounded evaluation and emits a custody receipt
 ```
 
 ## Ownership ledger
@@ -28,6 +29,35 @@ EVIDENCE     supports a scoped claim under its source boundary
 | Solance reading | this repo | companion and formalization pole |
 | BD-AI field record | KakeyaLogic and Claude V6 | case provenance and paired observations |
 | Public trajectory sources | original official/academic publishers | scoped evidence only |
+| Meta Thinking Machine V4 | this repo `docs/meta/` and `site/artifacts/meta/` | companion instrument and used-energy custody receipt |
+
+## Registered downstream companion — Meta V4
+
+| Field | Registration |
+|---|---|
+| Designation | `PEAICE-V4-META-COMPANION-FINAL-001` |
+| Source receipt | merged [PR #6](https://github.com/Manny536/excellence-engine-v4/pull/6) · commit `f74715c0f32f2ade49ddf3f5d36fbbe6adf41d57` |
+| Role | `COMPANION` + `INSTRUMENT` |
+| Interactive surface | [Wired Telemetry HTML](../docs/meta/PeAIce-Thinking-Machine-V4-Wired-Telemetry.html) |
+| Companion surface | [FINAL Markdown](../docs/meta/PeAIce_V4_Meta_Thinking_Machine_Companion_FINAL.md) · [FINAL DOCX](../docs/meta/PeAIce_V4_Meta_Thinking_Machine_Companion_FINAL.docx) |
+| Site mirror | [public artifact path](../site/artifacts/meta/thinking-machine-v4-wired-telemetry.html) |
+| Integrity pins | HTML `da18b5ea8a7919e8b031976898506cc69f8a5cfa63dbb5b2a561fd20ebcfbc51` · DOCX `69dcc2843a5bd80a44ad715d61b5ff7c27a1595bce0745eafe66562b77c33423` |
+| Source state | companion `FINAL-PUBLIC-RESEARCH` · instrument `REGISTERED` |
+| Open seals | RH `OPEN` · Coleman `OPEN` · CP-004 `OWED` |
+
+The registered outcome trace is:
+
+```text
+Question   Meta receives the typed V4 research object.
+Attempt    The interactive executes HELD, KNS(LB), L²_C, firewall, and Outcomes surfaces.
+Receipt    Used energy is recorded as a custody receipt with real HTML captures and artifact hashes.
+Correction Authoritative captures remain separate from Appendix Z synthetic, non-authoritative plates.
+Status     The companion is final public research; the instrument is registered; OPEN seals persist.
+Next burden Independent receipts remain required for CP-004 and every theorem-facing lift.
+```
+
+This registration changes the downstream evidence and instrument map. It does not change
+the truth state of any theorem-facing object.
 
 ## Authority graph
 
