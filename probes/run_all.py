@@ -13,6 +13,7 @@ PROBES = [
     "claim_status_probe.py",
     "held_trace_probe.py",
     "outcome_case_probe.py",
+    "benevolence_drift_probe.py",
     "evidence_exposure_probe.py",
     "correction_survival_probe.py",
     "ledger_continuity_probe.py",

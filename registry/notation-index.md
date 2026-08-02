@@ -9,4 +9,6 @@
 | h | Evaluator non-sovereignty bound |
 | β | Continuity / correction momentum |
 | BD-AI | Benevolence Drift (AI neutrality) — not NB/BD |
+| BD-AI_t | Threshold/application mismatch indicator at turn t |
+| τ_call | Preregistered BD-AI classification threshold — not Kakeya-lane τ |
 | II | Inspectable Intelligence |

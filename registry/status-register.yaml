@@ -1,7 +1,7 @@
 {
   "version": 2,
   "release": "R1-candidate",
-  "updated": "2026-08-01",
+  "updated": "2026-08-02",
   "engine": "V4 = K→R · HELD",
   "h": "< 1",
   "entries": [
@@ -15,6 +15,9 @@
     {"id": "coleman", "status": "OPEN"},
     {"id": "RH", "status": "OPEN"},
     {"id": "outcomes_final_001", "status": "FINAL-PUBLIC-RESEARCH"},
+    {"id": "outcomes_architecture", "status": "FORMAL"},
+    {"id": "bd_ai_cases", "status": "REGISTERED-QUALITATIVE"},
+    {"id": "bd_ai_trajectory_reference", "status": "SOURCE-REGISTERED"},
     {"id": "bd_ai_benchmark", "status": "OWED"},
     {"id": "ii_measurement", "status": "OWED"}
   ]

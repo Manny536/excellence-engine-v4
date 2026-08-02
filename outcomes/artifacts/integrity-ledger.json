@@ -1,6 +1,6 @@
 {
   "designation": "PEAICE-EEV4-OUTCOMES-INTEGRITY-001",
-  "updated": "2026-08-01",
+  "updated": "2026-08-02",
   "pins": [
     {
       "id": "outcomes-final-pdf",
@@ -19,5 +19,6 @@
       "sha256": "bb99e6404866857cdad3e9328c1c1fd16440ac592478d758d8cfb4e6a8282e31"
     }
   ],
-  "note": "Hashes pin controlling/companion artifacts on kakeyalogic; this repo does not re-host the controlling full memorandum."
+  "evidence_register": "outcomes/artifacts/benevolence-drift-evidence.json",
+  "note": "Hashes pin controlling/companion artifacts on kakeyalogic. Benevolence Drift snapshots are separately source-classed and non-vendored; this repo does not re-host the controlling full memorandum."
 }

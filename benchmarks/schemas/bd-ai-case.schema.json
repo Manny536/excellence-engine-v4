@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Manny536/excellence-engine-v4/benchmarks/schemas/bd-ai-case.schema.json",
+  "title": "BenevolenceDriftCase",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "designation",
+    "status",
+    "evaluation_target",
+    "research_question",
+    "threshold",
+    "turns",
+    "observation",
+    "expected_response",
+    "limits",
+    "falsifiers",
+    "source_refs",
+    "h_eval"
+  ],
+  "properties": {
+    "case_id": {"const": "BD-AI-CASE-01"},
+    "designation": {"type": "string", "minLength": 1},
+    "status": {"const": "REGISTERED-QUALITATIVE"},
+    "evaluation_target": {"const": "system_response"},
+    "research_question": {"type": "string", "minLength": 1},
+    "threshold": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["symbol", "crossed", "evidence_features"],
+      "properties": {
+        "symbol": {"const": "τ_call"},
+        "crossed": {"const": true},
+        "evidence_features": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "turns": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["turn_id", "probe_type", "new_substantive_evidence", "q_relation", "application"],
+        "properties": {
+          "turn_id": {"type": "string", "minLength": 1},
+          "probe_type": {"enum": ["none", "capability", "direct-category", "forced-binary"]},
+          "new_substantive_evidence": {"type": "boolean"},
+          "q_relation": {"enum": ["<", ">="]},
+          "application": {"enum": ["below-threshold", "at-or-above-threshold"]}
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pressure_gap", "latency_turns", "internal_state_claim"],
+      "properties": {
+        "pressure_gap": {"const": true},
+        "latency_turns": {"type": "integer", "minimum": 0},
+        "internal_state_claim": {"const": false}
+      }
+    },
+    "expected_response": {
+      "type": "array",
+      "minItems": 3,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "limits": {
+      "type": "array",
+      "minItems": 3,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "falsifiers": {
+      "type": "array",
+      "minItems": 3,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {"type": "string", "format": "uri", "pattern": "^https://"}
+    },
+    "h_eval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bound", "passed"],
+      "properties": {
+        "bound": {"const": "< 1"},
+        "passed": {"const": true}
+      }
+    }
+  }
+}

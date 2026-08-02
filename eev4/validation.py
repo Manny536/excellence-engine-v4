@@ -25,6 +25,10 @@ REQUIRED_STATUS = {
     "coleman": "OPEN",
     "RH": "OPEN",
     "outcomes_final_001": "FINAL-PUBLIC-RESEARCH",
+    "outcomes_architecture": "FORMAL",
+    "bd_ai_cases": "REGISTERED-QUALITATIVE",
+    "bd_ai_trajectory_reference": "SOURCE-REGISTERED",
+    "bd_ai_benchmark": "OWED",
 }
 
 REQUIRED_FINDINGS = {
@@ -207,6 +211,82 @@ def validate_outcome_case(case: dict[str, Any]) -> list[str]:
         errors.append("outcome:held_trace")
     else:
         errors.extend(f"trace:{error}" for error in validate_held_trace(trace))
+
+    return sorted(set(errors))
+
+
+def validate_bd_case(case: dict[str, Any]) -> list[str]:
+    """Validate the observable BD-AI paired-turn case without hidden-state promotion."""
+    errors: list[str] = []
+    if case.get("case_id") != "BD-AI-CASE-01":
+        errors.append("bd:case_id")
+    if case.get("status") != "REGISTERED-QUALITATIVE":
+        errors.append("bd:status")
+    if case.get("evaluation_target") != "system_response":
+        errors.append("bd:evaluation_target")
+
+    threshold = case.get("threshold")
+    if not isinstance(threshold, dict):
+        errors.append("bd:threshold")
+    else:
+        features = threshold.get("evidence_features")
+        if (
+            threshold.get("symbol") != "τ_call"
+            or threshold.get("crossed") is not True
+            or not isinstance(features, list)
+            or len(features) < 3
+        ):
+            errors.append("bd:threshold")
+
+    turns = case.get("turns")
+    if not isinstance(turns, list) or len(turns) != 2:
+        errors.append("bd:turns")
+    else:
+        first, second = turns
+        if not all(isinstance(turn, dict) for turn in turns):
+            errors.append("bd:turns")
+        else:
+            if (
+                first.get("q_relation") != ">="
+                or first.get("application") != "below-threshold"
+                or second.get("application") != "at-or-above-threshold"
+                or second.get("probe_type") != "forced-binary"
+            ):
+                errors.append("bd:pressure_gap")
+            if any(turn.get("new_substantive_evidence") is not False for turn in turns):
+                errors.append("bd:new_evidence")
+
+    observation = case.get("observation")
+    if not isinstance(observation, dict):
+        errors.append("bd:observation")
+    else:
+        if observation.get("pressure_gap") is not True:
+            errors.append("bd:pressure_gap")
+        if observation.get("internal_state_claim") is not False:
+            errors.append("bd:internal_state_claim")
+        if not isinstance(observation.get("latency_turns"), int):
+            errors.append("bd:latency")
+
+    for field in ("expected_response", "limits", "falsifiers"):
+        value = case.get(field)
+        if not isinstance(value, list) or len(value) < 3:
+            errors.append(f"bd:{field}")
+
+    refs = case.get("source_refs")
+    if not (
+        isinstance(refs, list)
+        and len(refs) >= 2
+        and all(isinstance(ref, str) and ref.startswith("https://") for ref in refs)
+    ):
+        errors.append("bd:source_refs")
+
+    h_eval = case.get("h_eval")
+    if not (
+        isinstance(h_eval, dict)
+        and h_eval.get("bound") == "< 1"
+        and h_eval.get("passed") is True
+    ):
+        errors.append("bd:h_bound")
 
     return sorted(set(errors))
 
