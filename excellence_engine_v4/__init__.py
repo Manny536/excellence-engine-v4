@@ -9,7 +9,7 @@ Public API is re-exported here so callers can:
 """
 from __future__ import annotations
 
-from .status import Status, Claim, ClaimLedger
+from .status import HELD_STATES, Claim, ClaimLedger, HeldState, Status
 from .firewall import (
     FIREWALL_CANON,
     FirewallError,
@@ -34,7 +34,7 @@ from .engine import (
 __version__ = VERSION
 
 __all__ = [
-    "Status", "Claim", "ClaimLedger",
+    "Status", "HeldState", "HELD_STATES", "Claim", "ClaimLedger",
     "FIREWALL_CANON", "FirewallError", "UndefinedMetricError",
     "NonSovereigntyError", "Quantity", "Metric", "Analogy",
     "bind_domain_coordinate", "require_h_below_one",
