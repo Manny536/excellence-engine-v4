@@ -56,8 +56,8 @@ Status     The companion is final public research; the instrument is registered;
 Next burden Independent receipts remain required for CP-004 and every theorem-facing lift.
 ```
 
-This registration changes the downstream evidence and instrument map. It does not change
-the truth state of any theorem-facing object.
+This registration is limited to the downstream evidence and instrument map. Every
+theorem-facing truth state remains unchanged.
 
 ## Authority graph
 
