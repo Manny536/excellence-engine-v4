@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "scope": "External paper and chapter references supplied for the EEV4 evidence surface.",
+  "snapshot_policy": "Metadata and SHA-256 provenance are registered; source PDFs are not vendored.",
+  "references": [
+    {
+      "id": "P1-wang-wu-restriction-decoupling",
+      "authors": [
+        "Hong Wang",
+        "Shukun Wu"
+      ],
+      "title": "Restriction estimates using decoupling theorems and two-ends Furstenberg inequalities",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "identifiers": {
+        "arxiv": "2411.08871v3"
+      },
+      "primary_url": "https://arxiv.org/abs/2411.08871",
+      "source_snapshot": {
+        "provided_name": "restrictionestimatesusingdecoulpingtheorems.pdf",
+        "pages": 44,
+        "sha256": "0c91de80d905de5738297728f1812ba417e7ade22a644867a6312dd414e4732d"
+      },
+      "eev4_role": "dependency-tower",
+      "reference_status": "THEOREM-BACKGROUND",
+      "use": "Restriction and decoupling background in R^3, including a p > 22/7 restriction estimate built from decoupling and two-ends Furstenberg inequalities.",
+      "claim_boundary": "This is bound-producing theorem background; it does not provide exact Riemann zero placement or a Kakeya-to-Riemann carrier.",
+      "bridge_effect": "does-not-close"
+    },
+    {
+      "id": "P2-slater-hilbert-schmidt",
+      "authors": [
+        "Paul B. Slater"
+      ],
+      "title": "Hilbert-Schmidt Orthogonality of det(ρ) and det(ρPT) over the Two-Rebit Systems ρ and Further Determinantal Moment Analyses",
+      "year": 2010,
+      "venue": "arXiv preprint",
+      "identifiers": {
+        "arxiv": "1007.4805v4"
+      },
+      "primary_url": "https://arxiv.org/abs/1007.4805",
+      "source_snapshot": {
+        "provided_name": "Hilber-schmidt.pdf",
+        "pages": 29,
+        "sha256": "532a5f9f1022f25d1321d0a722e3ebd6287b088c9316e3c5e3b72e629e20b916"
+      },
+      "eev4_role": "comparative-operator-example",
+      "reference_status": "STRUCTURAL-ANALOGY",
+      "use": "A bounded comparative example involving Hilbert-Schmidt measure, determinant moments, and orthogonality language.",
+      "claim_boundary": "This domain-specific two-rebit analysis is not a general Hilbert-Schmidt theorem, a Kakeya result, or evidence for an exact Xi-realizing operator.",
+      "bridge_effect": "does-not-close"
+    },
+    {
+      "id": "P3-wang-zahl-kakeya-r3",
+      "authors": [
+        "Hong Wang",
+        "Joshua Zahl"
+      ],
+      "title": "Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "identifiers": {
+        "arxiv": "2502.17655v1"
+      },
+      "primary_url": "https://arxiv.org/abs/2502.17655",
+      "source_snapshot": {
+        "provided_name": "Hong Wang∗ Joshua Zahl † February 26, 2025.pdf",
+        "pages": 127,
+        "sha256": "631e8b2118e3d03ded2d5fe79f9acdf74353877d143e9887a3c31278cd13ed01"
+      },
+      "eev4_role": "kakeya-theorem-background",
+      "reference_status": "THEOREM-BACKGROUND",
+      "use": "Primary theorem background for full Minkowski and Hausdorff dimension of Kakeya sets in R^3.",
+      "claim_boundary": "The R^3 Kakeya theorem does not by itself prove RH; sufficient Kakeya-implies-RH packaging remains CLOSED.",
+      "bridge_effect": "does-not-close"
+    },
+    {
+      "id": "P4-ochs-chen-brox-pock-ipiano",
+      "authors": [
+        "Peter Ochs",
+        "Yunjin Chen",
+        "Thomas Brox",
+        "Thomas Pock"
+      ],
+      "title": "iPiano: Inertial Proximal Algorithm for Nonconvex Optimization",
+      "year": 2014,
+      "venue": "SIAM Journal on Imaging Sciences 7(2), 1388-1419",
+      "identifiers": {
+        "doi": "10.1137/130942954"
+      },
+      "primary_url": "https://epubs.siam.org/doi/10.1137/130942954",
+      "source_snapshot": {
+        "provided_name": "ipiano.pdf",
+        "pages": 32,
+        "sha256": "2e813b768a477005ac6c556ad8b1b6bdce86f40e4fc03481fde4beeb2d1a3e81"
+      },
+      "eev4_role": "inertial-dynamics-background",
+      "reference_status": "KNOWN",
+      "use": "External grounding for controlled inertial or heavy-ball-style dynamics through a descent and convergence architecture.",
+      "claim_boundary": "EEV4 beta continuity is a governance quantity, not the iPiano momentum parameter; the paper does not validate EEV4 factors or mathematical bridge claims.",
+      "bridge_effect": "does-not-close"
+    },
+    {
+      "id": "P5-poltoratski-krein-spectral-shift",
+      "authors": [
+        "Alexei G. Poltoratski"
+      ],
+      "title": "The Krein spectral shift and rank one perturbations of spectra",
+      "year": 1996,
+      "venue": "arXiv preprint",
+      "identifiers": {
+        "arxiv": "math/9601206v1"
+      },
+      "primary_url": "https://arxiv.org/abs/math/9601206",
+      "source_snapshot": {
+        "provided_name": "kreinSpectralShift.pdf",
+        "pages": 25,
+        "sha256": "76aaca9bb84cb8186d05b5ef75328059ba6ca2fe957e8750c31c49cb5a8acb32"
+      },
+      "eev4_role": "spectral-operator-background",
+      "reference_status": "KNOWN",
+      "use": "Operator-theoretic background for Krein spectral shift and self-adjoint rank-one perturbations.",
+      "claim_boundary": "General rank-one perturbation theory does not supply the required prime weights, Gamma-factor density, or an exact Xi-realizing carrier.",
+      "bridge_effect": "does-not-close"
+    },
+    {
+      "id": "P6-guth-wang-zahl-streamlined-kakeya",
+      "authors": [
+        "Larry Guth",
+        "Hong Wang",
+        "Joshua Zahl"
+      ],
+      "title": "A streamlined proof of the Kakeya set conjecture in R^3",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "identifiers": {
+        "arxiv": "2601.14411v1"
+      },
+      "primary_url": "https://arxiv.org/abs/2601.14411",
+      "source_snapshot": {
+        "provided_name": "LARRY GUTH, HONG WANG, AND JOSHUA ZAHL Abstract. We present a streamlined and simplified proof of the Kakeya set conjecture in R3.pdf",
+        "pages": 47,
+        "sha256": "1bc7df83c394cb74038af673c4a25e98b3e018039c75f3b26501ed496028dce9"
+      },
+      "eev4_role": "kakeya-theorem-background",
+      "reference_status": "THEOREM-BACKGROUND",
+      "use": "Streamlined theorem-background presentation of the Kakeya set conjecture in R^3.",
+      "claim_boundary": "The streamlined proof concerns Kakeya in R^3 and does not close RH, the Coleman Conjecture, or the faithful kappa bridge.",
+      "bridge_effect": "does-not-close"
+    },
+    {
+      "id": "P7-chaosbook-spectral-determinants",
+      "authors": [
+        "Predrag Cvitanović",
+        "Roberto Artuso",
+        "Ronnie Mainieri",
+        "Gregor Tanner",
+        "Gábor Vattay",
+        "Niall Whelan",
+        "Andreas Wirzba"
+      ],
+      "title": "Spectral determinants",
+      "year": 2012,
+      "venue": "Chaos: Classical and Quantum, version 14, Chapter 19",
+      "identifiers": {
+        "edition": "version14"
+      },
+      "primary_url": "https://chaosbook.org/version14/chapters/det.pdf",
+      "source_snapshot": {
+        "provided_name": "Spectral determinism(pdf).pdf",
+        "pages": 16,
+        "sha256": "d58124668a6d5c28befeefa8e83204991089242c8758ac184e8bb5f577ac1c5f"
+      },
+      "eev4_role": "spectral-determinant-background",
+      "reference_status": "KNOWN",
+      "use": "Background on spectral determinants, trace formulas, dynamical zeta functions, and evolution-operator spectra.",
+      "claim_boundary": "This chapter supplies vocabulary and examples, not a rigorous EEV4 operator realization or a proof that a proposed determinant equals Xi.",
+      "bridge_effect": "does-not-close"
+    }
+  ]
+}

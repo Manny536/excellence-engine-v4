@@ -33,3 +33,8 @@ external_math:
     arxiv: "2411.08871"
   - id: guth_maynard_2024
     arxiv: "2405.20552"
+paper_reference_surface:
+  bibliography: references/README.md
+  register: registry/paper-references.json
+  schema: benchmarks/schemas/paper-reference.schema.json
+  supplied_snapshot_count: 7

@@ -17,6 +17,7 @@ PROBES = [
     "correction_survival_probe.py",
     "ledger_continuity_probe.py",
     "artifact_integrity_probe.py",
+    "paper_references_probe.py",
     "control_cases_probe.py",
     "schema_validation_probe.py",
     "open_status_probe.py",

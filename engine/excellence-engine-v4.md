@@ -55,7 +55,7 @@ V4 = K→R · HELD
 - tube and grain geometry;
 - overlap, compression, and anti-clustering;
 - restriction and decoupling ancestry;
-- the proven full-dimensional Kakeya result in `ℝ³` as theorem background.
+- the proven full-dimensional Kakeya result in `ℝ³` as theorem background [P3, P6].
 
 ### 2.2 `R` — Riemann control
 
@@ -198,7 +198,8 @@ while the exact zero-location bridge remains owed.
 
 That reading has receipts:
 
-1. directional incidence geometry is upstream of major restriction and decoupling methods;
+1. directional incidence geometry is upstream of major restriction and decoupling methods
+   [P1, P3, P6];
 2. those methods enter exponential-sum and Dirichlet-polynomial estimates;
 3. those estimates constrain zeta growth and zero density;
 4. bound-type control does not presently deliver exact critical-line placement;
@@ -345,6 +346,8 @@ This is the V4 identity.
 | `docs/inspectable-intelligence.md` | Claim visibility, non-self-certification, `h < 1` |
 | `docs/outcomes/README.md` | Conjecture custody and evidence-exposure rule |
 | `README.md` | Public repository register |
+| `references/README.md` | Typed paper citations, EEV4 uses, and claim boundaries |
+| `registry/paper-references.json` | Machine-validated paper provenance and snapshot hashes |
 
 V4 does not erase V3. It gives V3 a research-time obligation.
 

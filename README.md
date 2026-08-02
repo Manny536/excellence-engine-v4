@@ -155,6 +155,7 @@ engine/        Formal V4 architecture · HELD predicate · II · h · β
 outcomes/      PeAIce Outcomes layer · findings · cases · readings · artifacts
 antecedent/    Kakeya–Riemann ground · tower · closed lanes · falsifiers
 registry/      Claim statuses · sources · designations · integrity
+references/    Paper bibliography · EEV4 roles · claim boundaries
 evaluations/   Protocols and rubrics
 benchmarks/    Schemas · cases · controls · results
 probes/        Executable diagnostics (criteria-explicit)
@@ -183,6 +184,8 @@ site/          Later public V4 HTML surface
 | [`outcomes/README.md`](outcomes/README.md) | Outcomes layer |
 | [`antecedent/kakeya-as-antecedent-riemann.md`](antecedent/kakeya-as-antecedent-riemann.md) | Ground statement |
 | [`SOURCE_MAP.md`](SOURCE_MAP.md) | Cross-repo ownership |
+| [`references/README.md`](references/README.md) | Seven-paper evidence and citation surface |
+| [`registry/paper-references.json`](registry/paper-references.json) | Validated paper provenance register |
 | [`ROADMAP.md`](ROADMAP.md) | Release stages |
 | [`evaluations/held-evaluation-protocol.md`](evaluations/held-evaluation-protocol.md) | Human evaluation contract |
 | [`benchmarks/cases/outcomes-001.json`](benchmarks/cases/outcomes-001.json) | Typed Outcomes reference case |
