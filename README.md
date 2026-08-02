@@ -80,7 +80,7 @@ Runtime closes three v3 seams in code (not prose):
 2. NP framing only as fenced `Analogy` — `.as_mechanism()` raises.
 3. ζ(0)=−½ may not bind as domain coordinate — `bind_domain_coordinate` raises (CLOSED-NEGATIVE transport).
 
-**PROGRAM_STATE** (package): RH OPEN · Coleman OPEN · **K→R frame HELD** · zeta transport CLOSED-NEGATIVE · NP-as-mechanism CLOSED-NEGATIVE.
+**PROGRAM_STATE** (package): RH OPEN · Coleman OPEN · **K→R frame HELD-RETAINED** · zeta transport CLOSED-NEGATIVE · NP-as-mechanism CLOSED-NEGATIVE.
 
 Factor operationalisations = **PROPOSED**. Provenance: [`excellence_engine_v4/PROVENANCE.md`](excellence_engine_v4/PROVENANCE.md) · package notes: Claude runtime README concepts retained in that module docstring stack.
 
