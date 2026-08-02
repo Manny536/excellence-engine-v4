@@ -75,3 +75,13 @@ Paper keys, exact citations, source-snapshot hashes, and use boundaries:
 | Package PROGRAM_STATE Coleman / RH | OPEN |
 
 Source: Claude-authored package integrated 2026-08-01 · `excellence_engine_v4/`
+
+## Meta Thinking Machine artifacts
+
+| Object | Status |
+|---|---|
+| Wired Telemetry HTML | REGISTERED instrument · `docs/meta/` |
+| Companion FINAL DOCX/MD | `PEAICE-V4-META-COMPANION-FINAL-001` · FINAL PUBLIC RESEARCH |
+| Main figures | REAL HTML captures (Appendix A) |
+| Appendix Z mocks | NON-AUTHORITATIVE archive only |
+| RH / Coleman | OPEN (unchanged) |

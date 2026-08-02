@@ -11,3 +11,4 @@
 | PEAICE-GROK-OUTCOMES-RUNDOWN-001 | Grok companion |
 | PEAICE-II-CANON-001 | Inspectable Intelligence |
 | PEAICE-EEV4-OUTCOMES-INTEGRITY-001 | Hash ledger in this repo |
+| PEAICE-V4-META-COMPANION-FINAL-001 | Meta Thinking Machine companion FINAL (DOCX/MD + HTML instrument) |
