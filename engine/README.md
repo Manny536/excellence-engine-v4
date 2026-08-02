@@ -29,4 +29,4 @@ Installable kernel at repository root:
 from excellence_engine_v4 import ExcellenceEngine, EngineInput, Claim, ClaimLedger, Status
 ```
 
-HELD in the package means the **K→R ground frame** is held; Coleman implication remains OPEN. Aligns with `held-predicate.md` custody language.
+`HELD-RETAINED` in the package means the **K→R ground frame** survived the current custody cycle with its open burdens named; Coleman remains OPEN. The exported `HeldState` enum matches `held-state-transitions.md` and the R1 validator.
