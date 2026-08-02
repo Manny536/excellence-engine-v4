@@ -1,7 +1,7 @@
 """beta-Protocol claim status typing for Excellence Engine v4.
 
 Every claim the engine carries MUST be typed with one of the five admissible
-statuses below. This is PeAIce canon: a claim's status is how honesty is
+statuses below. This is PeAIce registered state: a claim's status is how honesty is
 transported through the machinery, and elevating a claim above its true status
 (overclaiming) is the thing the integrity factor is built to penalise.
 """
@@ -19,6 +19,20 @@ class Status(str, Enum):
     OPEN = "OPEN"                         # unsettled; a live question
     ANALOGY = "ANALOGY"                   # illustrative only; NOT a mechanism claim
     CLOSED_NEGATIVE = "CLOSED-NEGATIVE"   # ruled out (e.g. a type error)
+
+
+class HeldState(str, Enum):
+    """Custody substates carried independently of mathematical claim status."""
+
+    RECEIVED = "RECEIVED"
+    ACTIVE = "HELD-ACTIVE"
+    REVISED = "HELD-REVISED"
+    RETAINED = "HELD-RETAINED"
+    RELEASED = "HELD-RELEASED"
+    CLOSED = "HELD-CLOSED"
+
+
+HELD_STATES: frozenset[str] = frozenset(state.value for state in HeldState)
 
 
 # Strength ordering. Used only to detect overclaiming: asserting a claim at a
