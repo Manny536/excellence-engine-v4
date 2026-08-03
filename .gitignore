@@ -8,3 +8,6 @@ venv/
 .coverage
 htmlcov/
 site/data/local/
+
+# Intermediate companion merge artifacts (FINAL lives in docs/meta)
+docs/_merge-staging/
