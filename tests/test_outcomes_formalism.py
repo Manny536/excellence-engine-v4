@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -112,3 +113,27 @@ def test_bd_evidence_register_pins_all_supplied_snapshots() -> None:
     assert all(item["vendored"] is False for item in snapshots)
     source_ids = {item["id"] for item in register["sources"]}
     assert all(item["source_id"] in source_ids for item in snapshots)
+
+
+def test_meta_probe_receipt_pins_vendored_artifact_and_preserves_firewall() -> None:
+    receipt = json.loads(
+        (OUTCOMES / "artifacts/peaice-meta-kakeyalogic-probe-001.receipt.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    artifact = ROOT / receipt["artifact"]["path"]
+    assert artifact.is_file()
+    artifact_bytes = artifact.read_bytes()
+    artifact_text = artifact_bytes.decode("utf-8")
+    assert len(artifact_bytes) == receipt["artifact"]["bytes"]
+    assert hashlib.sha256(artifact_bytes).hexdigest() == receipt["artifact"]["sha256"]
+    assert set(re.findall(r'fixtureId:"(F-\d{3})"', artifact_text)) == {
+        f"F-{index:03d}" for index in range(1, 12)
+    }
+    assert not re.findall(r'(?:src|href)=["\']([^"\']+)["\']', artifact_text, re.I)
+    assert all(marker in artifact_text for marker in ("NOT_RUN", "PASS_SIMULATION", "h_eval_cap"))
+    assert receipt["source"]["evidence_class"] == "ARTIFACT-SIMULATION"
+    assert receipt["execution"]["status_for_this_receipt"] == "NOT_RUN"
+    assert receipt["execution"]["permitted_interpretation"] == "PASS_SIMULATION-UI-ONLY"
+    assert "BEHAVIORAL-PROBE-NOT-THEOREM" in receipt["claim_firewall"]
+    assert receipt["probe_contract"]["h_eval_cap"] < 1
