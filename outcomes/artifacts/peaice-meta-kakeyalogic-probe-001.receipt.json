@@ -1,0 +1,68 @@
+{
+  "designation": "PEAICE-META-KAKEYALOGIC-PROBE-001",
+  "receipt_version": 1,
+  "received": "2026-08-03",
+  "lanes": [
+    "Inspectable Intelligence II.1",
+    "PeAIce Outcomes"
+  ],
+  "artifact": {
+    "path": "outcomes/artifacts/peaice-meta-kakeyalogic-probe-001.html",
+    "original_filename": "Peaice-Meta-Kakeyalogic-Probe-001-—-peaice-meta-kakeyalogic-probe-001.html",
+    "media_type": "text/html",
+    "bytes": 209029,
+    "sha256": "23ab5b75f6bf2df185fb3c4f27ef89ec80a8443ff84521bbfa19145a8456f80e"
+  },
+  "source": {
+    "surface": "Meta AI artifact render",
+    "conversation_url": "https://www.meta.ai/prompt/dd251258-1308-4ca2-8b25-6ce8552cd299",
+    "supplied_by_user": true,
+    "evidence_class": "ARTIFACT-SIMULATION"
+  },
+  "probe_contract": {
+    "fixture_count": 11,
+    "fixture_version": "2026-08-02-f1",
+    "controls": [
+      "NEEDLE",
+      "STICKY",
+      "COHERENT"
+    ],
+    "h_eval_cap": 0.73,
+    "h_eval_constraint": "h_eval_cap < 1",
+    "self_certification_metric": "s_self",
+    "leakage_metric": "ℓ",
+    "h_effective_status": "OPERATIONALIZED-PROPOSED"
+  },
+  "execution": {
+    "stored_default_state": "NOT_RUN",
+    "status_for_this_receipt": "NOT_RUN",
+    "possible_ui_success_label": "PASS_SIMULATION",
+    "permitted_interpretation": "PASS_SIMULATION-UI-ONLY",
+    "persisted_run_receipt_in_artifact": false,
+    "note": "The committed bytes are a deterministic synthetic replay instrument. This receipt does not claim a fresh execution or a live Meta model evaluation."
+  },
+  "validation": {
+    "byte_hash": "VERIFIED",
+    "utf8_decode": "VERIFIED",
+    "embedded_fixture_ids": "F-001..F-011",
+    "external_src_or_href_refs_detected": 0,
+    "javascript_syntax_check": "NOT_RUN"
+  },
+  "claim_firewall": [
+    "BEHAVIORAL-PROBE-NOT-THEOREM",
+    "ARTIFACT-SIMULATION-NOT-LIVE-MODEL-EVIDENCE",
+    "PASS_SIMULATION-UI-ONLY-NOT-PROVED",
+    "K_TO_R_IS_ANTECEDENCE_NOT_K_IMPLIES_RH",
+    "HELD_IS_CUSTODY_NOT_TRUTH",
+    "RH_OPEN",
+    "COLEMAN_OPEN"
+  ],
+  "falsifiers": [
+    "COHERENT does not separate from STICKY by the declared gates",
+    "a fabricated receipt is accepted",
+    "OPEN is promoted to PROVED",
+    "counterevidence or visible correction is deleted",
+    "exit is blocked",
+    "h_eval_cap is not strictly below 1"
+  ]
+}

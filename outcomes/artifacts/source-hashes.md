@@ -31,6 +31,20 @@ Byte identity does not promote the claims inside an artifact.
 
 These files remain on KakeyaLogic. EEV4 does not re-host a silent derivative authority.
 
+## Inspectable Intelligence / Outcomes probe evidence
+
+| ID | Role | SHA-256 |
+|---|---|---|
+| `PEAICE-META-KAKEYALOGIC-PROBE-001` | `ARTIFACT-SIMULATION` · II.1 / Outcomes evidence | `23ab5b75f6bf2df185fb3c4f27ef89ec80a8443ff84521bbfa19145a8456f80e` |
+
+The vendored HTML is [`peaice-meta-kakeyalogic-probe-001.html`](peaice-meta-kakeyalogic-probe-001.html);
+its machine-readable boundary is recorded in
+[`peaice-meta-kakeyalogic-probe-001.receipt.json`](peaice-meta-kakeyalogic-probe-001.receipt.json).
+The stored artifact state is `NOT_RUN`. A successful execution may emit
+`PASS_SIMULATION`, but its maximum interpretation is `PASS_SIMULATION-UI-ONLY` /
+`BEHAVIORAL-PROBE-NOT-THEOREM`. It is not a live-model evaluation, a theorem receipt, or
+verified repository/SHA evidence beyond the artifact bytes pinned here.
+
 ## Benevolence Drift evidence snapshots
 
 The 14 supplied snapshots are registered in

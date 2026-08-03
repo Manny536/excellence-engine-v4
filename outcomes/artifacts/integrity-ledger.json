@@ -1,6 +1,6 @@
 {
   "designation": "PEAICE-EEV4-OUTCOMES-INTEGRITY-001",
-  "updated": "2026-08-02",
+  "updated": "2026-08-03",
   "pins": [
     {
       "id": "outcomes-final-pdf",
@@ -17,8 +17,15 @@
     {
       "id": "grok-rundown-docx",
       "sha256": "bb99e6404866857cdad3e9328c1c1fd16440ac592478d758d8cfb4e6a8282e31"
+    },
+    {
+      "id": "meta-kakeyalogic-probe-001-html",
+      "path": "outcomes/artifacts/peaice-meta-kakeyalogic-probe-001.html",
+      "sha256": "23ab5b75f6bf2df185fb3c4f27ef89ec80a8443ff84521bbfa19145a8456f80e",
+      "role": "ARTIFACT-SIMULATION"
     }
   ],
   "evidence_register": "outcomes/artifacts/benevolence-drift-evidence.json",
-  "note": "Hashes pin controlling/companion artifacts on kakeyalogic. Benevolence Drift snapshots are separately source-classed and non-vendored; this repo does not re-host the controlling full memorandum."
+  "meta_probe_receipt": "outcomes/artifacts/peaice-meta-kakeyalogic-probe-001.receipt.json",
+  "note": "Hashes pin controlling/companion artifacts on kakeyalogic plus the vendored Meta synthetic replay instrument. The Meta probe is ARTIFACT-SIMULATION with stored state NOT_RUN; PASS_SIMULATION is UI-only and never theorem or live-model evidence."
 }

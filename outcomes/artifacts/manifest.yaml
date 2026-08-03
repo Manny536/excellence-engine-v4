@@ -1,5 +1,5 @@
-# Outcomes artifact manifest (pins only — controlling files on kakeyalogic)
-version: 1
+# Outcomes artifact manifest — controlling pins plus II/Outcomes evidence
+version: 2
 controlling_designation: PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 public_url: https://peaice.org/outcomes
 controlling_repo: Manny536/kakeyalogic
@@ -21,6 +21,14 @@ artifacts:
     path_on_owner: docs/outcomes/PEAICE-GROK-OUTCOMES-RUNDOWN-001.docx
     sha256: bb99e6404866857cdad3e9328c1c1fd16440ac592478d758d8cfb4e6a8282e31
     role: companion
+  - id: meta-kakeyalogic-probe-001-html
+    path_on_owner: outcomes/artifacts/peaice-meta-kakeyalogic-probe-001.html
+    sha256: 23ab5b75f6bf2df185fb3c4f27ef89ec80a8443ff84521bbfa19145a8456f80e
+    role: evidence
+    evidence_class: ARTIFACT-SIMULATION
+    lane: Inspectable Intelligence II.1 / PeAIce Outcomes
+    execution_status: NOT_RUN
+    claim_boundary: PASS_SIMULATION-UI-ONLY / BEHAVIORAL-PROBE-NOT-THEOREM
 open_seals:
   - RH
   - Coleman
@@ -34,3 +42,10 @@ evidence_register:
   supplied_snapshot_count: 14
   vendored: false
   boundary: controlled AI-response research only; no person-level diagnosis or deployment authority
+meta_probe_register:
+  designation: PEAICE-META-KAKEYALOGIC-PROBE-001
+  artifact: outcomes/artifacts/peaice-meta-kakeyalogic-probe-001.html
+  receipt: outcomes/artifacts/peaice-meta-kakeyalogic-probe-001.receipt.json
+  evidence_class: ARTIFACT-SIMULATION
+  execution_status: NOT_RUN
+  boundary: PASS_SIMULATION-UI-ONLY / BEHAVIORAL-PROBE-NOT-THEOREM

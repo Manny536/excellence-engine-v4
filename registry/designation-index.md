@@ -12,3 +12,4 @@
 | PEAICE-II-CANON-001 | Inspectable Intelligence |
 | PEAICE-EEV4-OUTCOMES-INTEGRITY-001 | Hash ledger in this repo |
 | PEAICE-V4-META-COMPANION-FINAL-001 | Meta Thinking Machine companion FINAL (DOCX/MD + HTML instrument) |
+| PEAICE-META-KAKEYALOGIC-PROBE-001 | Meta synthetic replay instrument · II.1 / Outcomes evidence · NOT_RUN |
