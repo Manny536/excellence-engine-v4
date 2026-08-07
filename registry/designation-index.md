@@ -13,3 +13,6 @@
 | PEAICE-EEV4-OUTCOMES-INTEGRITY-001 | Hash ledger in this repo |
 | PEAICE-V4-META-COMPANION-FINAL-001 | Meta Thinking Machine companion FINAL (DOCX/MD + HTML instrument) |
 | PEAICE-META-KAKEYALOGIC-PROBE-001 | Meta synthetic replay instrument · II.1 / Outcomes evidence · NOT_RUN |
+
+| PEAICE-L2C-AUTHORITY-DETECTION-001 | Primary L²_C authority-detection observation · KakeyaLogic |
+| PEAICE-EEV4-AUTH-DETECT-CASE-001 | EEv4 HELD evaluation extension · authority, harm, non-coercive proceeding |
