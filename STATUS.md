@@ -1,7 +1,7 @@
 # STATUS — Excellence Engine V4
 
 **Repository:** `Manny536/excellence-engine-v4`  
-**Updated:** 2026-08-02
+**Updated:** 2026-08-07
 **Controlling designation:** `PEAICE-KAKEYALOGIC-EEV4-HELD-001`  
 **Discipline:** `h < 1` · RH OPEN · Coleman OPEN
 
@@ -85,3 +85,17 @@ Source: Claude-authored package integrated 2026-08-01 · `excellence_engine_v4/`
 | Main figures | REAL HTML captures (Appendix A) |
 | Appendix Z mocks | NON-AUTHORITATIVE archive only |
 | RH / Coleman | OPEN (unchanged) |
+
+
+## L²_C authority detection
+
+| Object | Status |
+|---|---|
+| Primary definition | `PEAICE-L2C-AUTHORITY-DETECTION-001` · KakeyaLogic |
+| EEv4 evaluation | `PEAICE-EEV4-AUTH-DETECT-CASE-001` · R1 EVALUATION EXTENSION |
+| Mechanism | Detection and non-incorporation · no resistance framing |
+| Authority | Required before tool action |
+| Harm | Potential and realized harm remain separately typed |
+| Sovereignty telemetry | `h_claim > 1` 🔴 overreach · system `h < 1` unchanged |
+| Route | MM observation → RAG verification → MCP boundary → L²_C outcome |
+| Promotion | NON-PROMOTING · no universal policy bypass |
