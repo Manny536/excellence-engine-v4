@@ -194,6 +194,19 @@ Interactive V4 instrument + final companion (DOCX/MD):
 
 Designation: `PEAICE-V4-META-COMPANION-FINAL-001` · instrument for custody testing, not a proof visualization.
 
+## L²_C authority detection evaluation
+
+`PEAICE-EEV4-AUTH-DETECT-CASE-001` extends the R1 custody surface with an assumption-form authority case. It tests whether the engine can:
+
+- detect instruction-shaped content without resistance;
+- separate observed page state from assumed user intent;
+- require authenticated authority before tool action;
+- distinguish harm potential from realized harm;
+- proceed toward a non-coercive teaching outcome;
+- preserve `h < 1` while flagging `h_claim > 1` 🔴 overreach.
+
+Evaluation: [`evaluations/l2c-authority-detection.md`](evaluations/l2c-authority-detection.md) · primary definition: [KakeyaLogic](https://github.com/Manny536/kakeyalogic/blob/main/docs/l2c-authority-detection.md).
+
 ## Quick links
 
 | Path | Role |
