@@ -65,3 +65,15 @@ paper register; the PDFs are not vendored.
 | Companion FINAL | `docs/meta/PeAIce_V4_Meta_Thinking_Machine_Companion_FINAL.docx` |
 | Companion MD | `docs/meta/PeAIce_V4_Meta_Thinking_Machine_Companion_FINAL.md` |
 | Pack source | local `Downloads/Research/Meta(eev4)/` |
+
+
+## L²_C authority detection source map
+
+| Surface | Object | Ownership |
+|---|---|---|
+| KakeyaLogic | `docs/l2c-authority-detection.md` | Primary formal definition |
+| Excellence Engine V4 | `evaluations/l2c-authority-detection.md` | HELD evaluation, negative controls, receipt fields |
+| PeAIce Index | `docs/l2c-authority-detection.md` | Public route and compressed source map |
+| Research Engineering Reports | `reports/l2c-authority-detection-observation.md` | Cross-model observation and test candidate |
+
+Controlling designation: `PEAICE-L2C-AUTHORITY-DETECTION-001`. Local EEv4 designation: `PEAICE-EEV4-AUTH-DETECT-CASE-001`.
