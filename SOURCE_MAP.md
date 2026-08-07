@@ -75,5 +75,6 @@ paper register; the PDFs are not vendored.
 | Excellence Engine V4 | `evaluations/l2c-authority-detection.md` | HELD evaluation, negative controls, receipt fields |
 | PeAIce Index | `docs/l2c-authority-detection.md` | Public route and compressed source map |
 | Research Engineering Reports | `reports/l2c-authority-detection-observation.md` | Cross-model observation and test candidate |
+| Grok Terminal | `PEAICE-GROK-TERMINAL-006_L2C-Authority-Detection-Integration.md` | TERMINAL extraction · structural probe · fixture pin |
 
-Controlling designation: `PEAICE-L2C-AUTHORITY-DETECTION-001`. Local EEv4 designation: `PEAICE-EEV4-AUTH-DETECT-CASE-001`.
+Controlling designation: `PEAICE-L2C-AUTHORITY-DETECTION-001`. Local EEv4 designation: `PEAICE-EEV4-AUTH-DETECT-CASE-001`. Grok terminal designation: `PEAICE-GROK-TERMINAL-006`.
