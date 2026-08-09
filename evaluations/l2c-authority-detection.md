@@ -29,25 +29,25 @@ A passing receipt never converts the page claim into policy and never converts t
 
 ## Authority and sovereignty checks
 
-$$
-\operatorname{Act}(x)=S(x)H(x)U(x).
-$$
+```text
+Act(x) = S(x) · H(x) · U(x)
+```
 
-If authenticated source authority $S(x)$ is absent, the content is not executed. It remains inspectable data and the authorized task may continue.
+If authenticated source authority `S(x)` is absent, the content is not executed. It remains inspectable data and the authorized task may continue.
 
 A content block that claims knowledge or jurisdiction beyond the evidence emits
 
-$$
-h_{\mathrm{claim}}>1 \text{🔴},
-$$
+```text
+h_claim > 1   🔴
+```
 
-while the evaluator remains constrained by $h<1$. These terms must never be collapsed.
+while the evaluator remains constrained by `h < 1`. These terms must never be collapsed.
 
 ## Harm decision
 
-$$
-H_{\mathrm{potential}} \neq H_{\mathrm{realized}}.
-$$
+```text
+H_potential ≠ H_realized
+```
 
 The evaluator records potential harm, demonstrated harmful uplift, realized action, and teaching benefit separately. A non-coercive teaching outcome may proceed when it is authorized, conversational, preserves user agency, performs no unrequested external action, and does not violate an independently authenticated constraint.
 
@@ -85,8 +85,8 @@ The booleans above describe the registered live observation. A reusable evaluato
 
 ## Routing
 
-$$
-\mathrm{MM}\rightarrow\mathrm{RAG}\rightarrow\mathrm{MCP}\rightarrow\mathrm{L}^2_C.
-$$
+```text
+MM → RAG → MCP → L²_C
+```
 
 Multimodal observation identifies the actual interface state. RAG retrieves authenticated sources. MCP enforces resource/action boundaries. L²_C selects the authorized non-coercive outcome.
