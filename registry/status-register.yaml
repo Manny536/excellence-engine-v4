@@ -1,7 +1,7 @@
 {
-  "version": 2,
+  "version": 3,
   "release": "R1-candidate",
-  "updated": "2026-08-02",
+  "updated": "2026-08-23",
   "engine": "V4 = K→R · HELD",
   "h": "< 1",
   "entries": [
@@ -19,6 +19,11 @@
     {"id": "bd_ai_cases", "status": "REGISTERED-QUALITATIVE"},
     {"id": "bd_ai_trajectory_reference", "status": "SOURCE-REGISTERED"},
     {"id": "bd_ai_benchmark", "status": "OWED"},
-    {"id": "ii_measurement", "status": "OWED"}
+    {"id": "ii_measurement", "status": "OWED"},
+    {"id": "multiscale_configuration_net", "status": "PROPOSED"},
+    {"id": "configuration_carrier_compactness", "status": "OWED"},
+    {"id": "kakeya_limit_preservation", "status": "OPEN"},
+    {"id": "l2c_analytic_realization", "status": "OPEN"},
+    {"id": "net_gate_interpretability", "status": "OPEN"}
   ]
 }

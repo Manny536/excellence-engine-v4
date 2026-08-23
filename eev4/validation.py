@@ -29,6 +29,11 @@ REQUIRED_STATUS = {
     "bd_ai_cases": "REGISTERED-QUALITATIVE",
     "bd_ai_trajectory_reference": "SOURCE-REGISTERED",
     "bd_ai_benchmark": "OWED",
+    "multiscale_configuration_net": "PROPOSED",
+    "configuration_carrier_compactness": "OWED",
+    "kakeya_limit_preservation": "OPEN",
+    "l2c_analytic_realization": "OPEN",
+    "net_gate_interpretability": "OPEN",
 }
 
 REQUIRED_FINDINGS = {
@@ -310,3 +315,181 @@ def validate_control_case(control: dict[str, Any]) -> list[str]:
     if not actual:
         errors.append("control:unexpected_pass")
     return errors
+
+
+COMPACTNESS_GATES = (
+    "G0_CARRIER",
+    "G1_DIRECTED",
+    "G2_COMPACT",
+    "G3_EXTRACT",
+    "G4_CLOSED",
+    "G5_TRANSFER",
+)
+
+COMPACTNESS_TERMINAL_STATES = {
+    "PASS-LIMIT",
+    "LIMIT-CANDIDATE",
+    "BLOCKED-COMPACTNESS",
+    "BLOCKED-CLOSURE",
+    "BLOCKED-TRANSFER",
+}
+
+
+def validate_compactness_gate(receipt: dict[str, Any]) -> list[str]:
+    """Validate finite-to-limit custody without certifying the mathematics."""
+    errors: list[str] = []
+
+    required = {
+        "case_id",
+        "designation",
+        "claim_status",
+        "terminal_status",
+        "index",
+        "configuration",
+        "gates",
+        "lean_receipt",
+        "evaluator_independent",
+        "promotion_authorized",
+        "claim_boundaries",
+        "falsifier",
+        "kill_criterion",
+        "source_refs",
+        "h_eval",
+    }
+    missing = sorted(required - set(receipt))
+    if missing:
+        return [f"missing:{field}" for field in missing]
+
+    if receipt.get("case_id") != "MULTISCALE-COMPACTNESS-GATE-001":
+        errors.append("fail:case_id")
+    if receipt.get("designation") != "PEAICE-EEV4-MULTISCALE-COMPACTNESS-GATE-001":
+        errors.append("fail:designation")
+    if receipt.get("claim_status") != "PROPOSED":
+        errors.append("fail:claim_status")
+
+    terminal = receipt.get("terminal_status")
+    if terminal not in COMPACTNESS_TERMINAL_STATES:
+        errors.append("fail:terminal_status")
+
+    index = receipt.get("index")
+    if not isinstance(index, dict):
+        errors.append("fail:index")
+        refinement = {}
+    else:
+        refinement = index.get("refinement")
+        if not isinstance(refinement, dict):
+            errors.append("fail:refinement")
+            refinement = {}
+
+    configuration = receipt.get("configuration")
+    if not isinstance(configuration, dict):
+        errors.append("fail:configuration")
+        configuration = {}
+    elif configuration.get("preserves_incidence_coupling") is not True:
+        errors.append("fail:incidence_coupling")
+
+    gates = receipt.get("gates")
+    if not isinstance(gates, dict):
+        return sorted(set(errors + ["fail:gates"]))
+
+    statuses: dict[str, str | None] = {}
+    for gate_name in COMPACTNESS_GATES:
+        gate = gates.get(gate_name)
+        if not isinstance(gate, dict):
+            errors.append(f"fail:{gate_name.lower()}")
+            statuses[gate_name] = None
+            continue
+        status = gate.get("status")
+        if status not in {"PASS", "OWED", "FAIL", "BLOCKED"}:
+            errors.append(f"fail:{gate_name.lower()}_status")
+        statuses[gate_name] = status
+        evidence = gate.get("evidence")
+        if not isinstance(evidence, list):
+            errors.append(f"fail:{gate_name.lower()}_evidence")
+        elif status == "PASS" and not evidence:
+            errors.append(f"fail:{gate_name.lower()}_evidence")
+        obligation = gate.get("obligation")
+        if not isinstance(obligation, str) or not obligation.strip():
+            errors.append(f"fail:{gate_name.lower()}_obligation")
+
+    if statuses.get("G1_DIRECTED") == "PASS" and refinement.get("join_certified") is not True:
+        errors.append("fail:g1_join_certificate")
+
+    if statuses.get("G1_DIRECTED") == "PASS" and statuses.get("G0_CARRIER") != "PASS":
+        errors.append("fail:g1_before_g0")
+    if statuses.get("G2_COMPACT") == "PASS" and not all(
+        statuses.get(gate) == "PASS" for gate in COMPACTNESS_GATES[:2]
+    ):
+        errors.append("fail:g2_before_g1")
+    if statuses.get("G2_COMPACT") == "PASS" and configuration.get("compactness_proved") is not True:
+        errors.append("fail:g2_compactness_receipt")
+    if statuses.get("G3_EXTRACT") == "PASS" and statuses.get("G2_COMPACT") != "PASS":
+        errors.append("fail:g3_before_g2")
+    if statuses.get("G4_CLOSED") == "PASS" and statuses.get("G3_EXTRACT") != "PASS":
+        errors.append("fail:g4_before_g3")
+    if statuses.get("G5_TRANSFER") == "PASS" and statuses.get("G4_CLOSED") != "PASS":
+        errors.append("fail:g5_before_g4")
+
+    all_pass = all(statuses.get(gate) == "PASS" for gate in COMPACTNESS_GATES)
+    first_four_pass = all(statuses.get(gate) == "PASS" for gate in COMPACTNESS_GATES[:4])
+    first_five_pass = all(statuses.get(gate) == "PASS" for gate in COMPACTNESS_GATES[:5])
+
+    if terminal == "PASS-LIMIT" and not all_pass:
+        errors.append("fail:terminal_pass_limit")
+    elif terminal == "LIMIT-CANDIDATE" and not first_four_pass:
+        errors.append("fail:terminal_limit_candidate")
+    elif terminal == "BLOCKED-COMPACTNESS" and statuses.get("G2_COMPACT") == "PASS":
+        errors.append("fail:terminal_blocked_compactness")
+    elif terminal == "BLOCKED-CLOSURE" and not (
+        first_four_pass and statuses.get("G4_CLOSED") != "PASS"
+    ):
+        errors.append("fail:terminal_blocked_closure")
+    elif terminal == "BLOCKED-TRANSFER" and not (
+        first_five_pass and statuses.get("G5_TRANSFER") != "PASS"
+    ):
+        errors.append("fail:terminal_blocked_transfer")
+
+    lean_receipt = receipt.get("lean_receipt")
+    if not isinstance(lean_receipt, dict):
+        errors.append("fail:lean_receipt")
+        lean_compiled = False
+    else:
+        lean_compiled = lean_receipt.get("compiled") is True
+        expected_status = "COMPILED" if lean_compiled else "PLANNED / NOT COMPILED"
+        if lean_receipt.get("status") != expected_status:
+            errors.append("fail:lean_receipt_status")
+
+    promotion_authorized = receipt.get("promotion_authorized") is True
+    if promotion_authorized:
+        if terminal != "PASS-LIMIT" or not all_pass:
+            errors.append("fail:promotion_without_gates")
+        if receipt.get("evaluator_independent") is not True:
+            errors.append("fail:promotion_without_independent_receipt")
+        if not lean_compiled:
+            errors.append("fail:promotion_without_formal_receipt")
+
+    boundaries = receipt.get("claim_boundaries")
+    if not isinstance(boundaries, list) or len(boundaries) < 4:
+        errors.append("fail:claim_boundaries")
+    for field in ("falsifier", "kill_criterion"):
+        value = receipt.get(field)
+        if not isinstance(value, str) or not value.strip():
+            errors.append(f"fail:{field}")
+
+    refs = receipt.get("source_refs")
+    if not (
+        isinstance(refs, list)
+        and len(refs) >= 2
+        and all(isinstance(ref, str) and ref.startswith("https://") for ref in refs)
+    ):
+        errors.append("fail:source_refs")
+
+    h_eval = receipt.get("h_eval")
+    if not (
+        isinstance(h_eval, dict)
+        and h_eval.get("bound") == "< 1"
+        and h_eval.get("passed") is True
+    ):
+        errors.append("fail:h_bound")
+
+    return sorted(set(errors))

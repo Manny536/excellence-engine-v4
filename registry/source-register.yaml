@@ -38,3 +38,24 @@ paper_reference_surface:
   register: registry/paper-references.json
   schema: benchmarks/schemas/paper-reference.schema.json
   supplied_snapshot_count: 7
+external_foundations:
+  - id: mat327_nets_filters
+    url: https://www.math.toronto.edu/ivan/mat327/docs/other/nets.pdf
+    role: directed sets, product-directed indexing, nets, and subnets
+    status: KNOWN
+    bridge_effect: does-not-close
+  - id: mat327_compactness
+    url: https://www.math.toronto.edu/ivan/mat327/docs/notes/16-compact.pdf
+    role: compactness and convergent-subnet background
+    status: KNOWN
+    bridge_effect: does-not-close
+  - id: mathlib_compactness_api
+    url: https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactness/Compact.html
+    role: Lean compactness and cluster-point formalization interface
+    status: KNOWN
+    bridge_effect: does-not-close
+  - id: mathlib_filter_at_top
+    url: https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/Filter/AtTopBot/Basic.html
+    role: Lean directed-net domain filter interface
+    status: KNOWN
+    bridge_effect: does-not-close

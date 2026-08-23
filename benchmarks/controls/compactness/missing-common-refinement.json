@@ -1,0 +1,10 @@
+{
+  "control_id": "compactness-missing-common-refinement",
+  "mutation": {
+    "path": "index.refinement.join_certified",
+    "value": false
+  },
+  "expected_errors": [
+    "fail:g1_join_certificate"
+  ]
+}

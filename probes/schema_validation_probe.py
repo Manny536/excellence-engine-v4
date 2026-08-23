@@ -34,12 +34,14 @@ def main() -> int:
     control_schema = load(schema_dir / "control-case.schema.json")
     paper_reference_schema = load(schema_dir / "paper-reference.schema.json")
     bd_case_schema = load(schema_dir / "bd-ai-case.schema.json")
+    compactness_gate_schema = load(schema_dir / "compactness-gate.schema.json")
     for schema in (
         held_schema,
         outcome_schema,
         control_schema,
         paper_reference_schema,
         bd_case_schema,
+        compactness_gate_schema,
     ):
         Draft202012Validator.check_schema(schema)
 
@@ -56,6 +58,10 @@ def main() -> int:
         ),
         "bd-ai-case-01": errors_for(
             load(ROOT / "benchmarks/cases/bd-ai-case-01.json"), bd_case_schema
+        ),
+        "multiscale-compactness-gate-001": errors_for(
+            load(ROOT / "benchmarks/cases/multiscale-compactness-gate-001.json"),
+            compactness_gate_schema,
         ),
     }
     for path in sorted((ROOT / "benchmarks/controls").glob("*.json")):

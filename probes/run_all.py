@@ -20,6 +20,7 @@ PROBES = [
     "artifact_integrity_probe.py",
     "paper_references_probe.py",
     "control_cases_probe.py",
+    "compactness_gate_probe.py",
     "schema_validation_probe.py",
     "open_status_probe.py",
 ]

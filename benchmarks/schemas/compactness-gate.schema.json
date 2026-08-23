@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Manny536/excellence-engine-v4/benchmarks/schemas/compactness-gate.schema.json",
+  "title": "MultiscaleCompactnessGateReceipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "designation",
+    "claim_status",
+    "terminal_status",
+    "index",
+    "configuration",
+    "gates",
+    "lean_receipt",
+    "evaluator_independent",
+    "promotion_authorized",
+    "claim_boundaries",
+    "falsifier",
+    "kill_criterion",
+    "source_refs",
+    "h_eval"
+  ],
+  "$defs": {
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "evidence", "obligation"],
+      "properties": {
+        "status": {"enum": ["PASS", "OWED", "FAIL", "BLOCKED"]},
+        "evidence": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "obligation": {"type": "string", "minLength": 1}
+      }
+    }
+  },
+  "properties": {
+    "case_id": {"const": "MULTISCALE-COMPACTNESS-GATE-001"},
+    "designation": {"const": "PEAICE-EEV4-MULTISCALE-COMPACTNESS-GATE-001"},
+    "claim_status": {"const": "PROPOSED"},
+    "terminal_status": {
+      "enum": [
+        "PASS-LIMIT",
+        "LIMIT-CANDIDATE",
+        "BLOCKED-COMPACTNESS",
+        "BLOCKED-CLOSURE",
+        "BLOCKED-TRANSFER"
+      ]
+    },
+    "index": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scale", "refinement", "product"],
+      "properties": {
+        "scale": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["order", "common_upper_bound"],
+          "properties": {
+            "order": {"const": "reverse"},
+            "common_upper_bound": {"const": "min"}
+          }
+        },
+        "refinement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["order", "common_upper_bound", "join_certified"],
+          "properties": {
+            "order": {"const": "sample-inclusion-and-partition-refinement"},
+            "common_upper_bound": {"const": "sample-union-and-partition-join"},
+            "join_certified": {"type": "boolean"}
+          }
+        },
+        "product": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["order", "coordinatewise"],
+          "properties": {
+            "order": {"const": "product"},
+            "coordinatewise": {"const": true}
+          }
+        }
+      }
+    },
+    "configuration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "carrier",
+        "state",
+        "preserves_incidence_coupling",
+        "compactness_proved"
+      ],
+      "properties": {
+        "carrier": {"type": "string", "minLength": 1},
+        "state": {"type": "string", "minLength": 1},
+        "preserves_incidence_coupling": {"const": true},
+        "compactness_proved": {"type": "boolean"}
+      }
+    },
+    "gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "G0_CARRIER",
+        "G1_DIRECTED",
+        "G2_COMPACT",
+        "G3_EXTRACT",
+        "G4_CLOSED",
+        "G5_TRANSFER"
+      ],
+      "properties": {
+        "G0_CARRIER": {"$ref": "#/$defs/gate"},
+        "G1_DIRECTED": {"$ref": "#/$defs/gate"},
+        "G2_COMPACT": {"$ref": "#/$defs/gate"},
+        "G3_EXTRACT": {"$ref": "#/$defs/gate"},
+        "G4_CLOSED": {"$ref": "#/$defs/gate"},
+        "G5_TRANSFER": {"$ref": "#/$defs/gate"}
+      }
+    },
+    "lean_receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "compiled", "mathlib_revision"],
+      "properties": {
+        "status": {"enum": ["PLANNED / NOT COMPILED", "COMPILED"]},
+        "compiled": {"type": "boolean"},
+        "mathlib_revision": {"type": "string", "minLength": 1}
+      }
+    },
+    "evaluator_independent": {"type": "boolean"},
+    "promotion_authorized": {"type": "boolean"},
+    "claim_boundaries": {
+      "type": "array",
+      "minItems": 4,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "falsifier": {"type": "string", "minLength": 1},
+    "kill_criterion": {"type": "string", "minLength": 1},
+    "source_refs": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {"type": "string", "format": "uri", "pattern": "^https://"}
+    },
+    "h_eval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bound", "passed"],
+      "properties": {
+        "bound": {"const": "< 1"},
+        "passed": {"const": true}
+      }
+    }
+  }
+}

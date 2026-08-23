@@ -19,6 +19,7 @@
 - [x] Criteria-explicit probe suite with regression tests
 - [x] `protect-open-status` CI gate
 - [x] Declared negative controls for dismissal, promotion, and evidence insulation
+- [x] Typed multiscale compactness gate preventing premature finite-to-limit promotion
 
 ### R2 — Multi-case benchmarks
 

@@ -118,6 +118,8 @@ R1 turns HELD from a documented predicate into an executable custody contract:
 - JSON Schema, criteria-explicit validators, regression tests, and six CI workflows
   protect the same contract;
 - every passing result is a custody receipt, never a theorem status.
+- the multiscale compactness gate blocks subnet extraction and limit promotion until its
+  directedness, compactness, closure, and transfer prerequisites are explicitly satisfied.
 
 Run the complete surface:
 
@@ -149,6 +151,10 @@ pytest -q
 | BD-AI trajectory reference | `SOURCE-REGISTERED` |
 | BD-AI multi-case benchmark | `OWED` |
 | `h` | `< 1` |
+| Multiscale configuration net | `PROPOSED` |
+| Configuration carrier compactness | `OWED` · `BLOCKED-COMPACTNESS` |
+| Kakeya limit preservation | `OPEN` |
+| L²_C analytic realization | `OPEN` |
 
 Full live register: [`STATUS.md`](STATUS.md) · machine form: [`registry/status-register.yaml`](registry/status-register.yaml)
 
@@ -223,6 +229,8 @@ Evaluation: [`evaluations/l2c-authority-detection.md`](evaluations/l2c-authority
 | [`ROADMAP.md`](ROADMAP.md) | Release stages |
 | [`evaluations/held-evaluation-protocol.md`](evaluations/held-evaluation-protocol.md) | Human evaluation contract |
 | [`benchmarks/cases/outcomes-001.json`](benchmarks/cases/outcomes-001.json) | Typed Outcomes reference case |
+| [`engine/multiscale-compactness-gate.md`](engine/multiscale-compactness-gate.md) | Product-directed finite-to-limit gate |
+| [`references/multiscale-topology.md`](references/multiscale-topology.md) | MAT327 and Mathlib source boundaries |
 
 ---
 

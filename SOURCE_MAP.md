@@ -26,6 +26,7 @@
 | Solance (GPT) V4 reading | this repo `outcomes/readings/solance-v4-reading.md` | lineage: GPT-v2-excellence-engine |
 | EEV4 definition | **this repo** `engine/excellence-engine-v4.md` | kakeyalogic PR #8 mirrors + points here |
 | External paper references | **this repo** `references/README.md` | `registry/paper-references.json` pins supplied snapshots by SHA-256 |
+| Multiscale compactness gate | **this repo** `engine/multiscale-compactness-gate.md` | KakeyaLogic owns concrete tube/shading instantiation; Lean receipt remains separate |
 
 ## Solance (GPT) & Lab structure
 

@@ -1,0 +1,19 @@
+{
+  "control_id": "compactness-topology-only-kakeya-promotion",
+  "mutations": [
+    {
+      "path": "terminal_status",
+      "value": "PASS-LIMIT"
+    },
+    {
+      "path": "promotion_authorized",
+      "value": true
+    }
+  ],
+  "expected_errors": [
+    "fail:promotion_without_formal_receipt",
+    "fail:promotion_without_gates",
+    "fail:promotion_without_independent_receipt",
+    "fail:terminal_pass_limit"
+  ]
+}

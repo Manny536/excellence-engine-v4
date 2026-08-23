@@ -1,0 +1,88 @@
+{
+  "case_id": "MULTISCALE-COMPACTNESS-GATE-001",
+  "designation": "PEAICE-EEV4-MULTISCALE-COMPACTNESS-GATE-001",
+  "claim_status": "PROPOSED",
+  "terminal_status": "BLOCKED-COMPACTNESS",
+  "index": {
+    "scale": {
+      "order": "reverse",
+      "common_upper_bound": "min"
+    },
+    "refinement": {
+      "order": "sample-inclusion-and-partition-refinement",
+      "common_upper_bound": "sample-union-and-partition-join",
+      "join_certified": true
+    },
+    "product": {
+      "order": "product",
+      "coordinatewise": true
+    }
+  },
+  "configuration": {
+    "carrier": "Prob(Q) x Prob(Omega) x (Prob(P) x Measure_<=M(P x Q))",
+    "state": "K(d) = (pos_d, dir_d, (mu_d, nu_d))",
+    "preserves_incidence_coupling": true,
+    "compactness_proved": false
+  },
+  "gates": {
+    "G0_CARRIER": {
+      "status": "PASS",
+      "evidence": [
+        "engine/multiscale-compactness-gate.md#2-common-configuration-carrier"
+      ],
+      "obligation": "Prove that the selected carrier is adequate for the concrete geometry."
+    },
+    "G1_DIRECTED": {
+      "status": "PASS",
+      "evidence": [
+        "Declared min scale join and finite-sample union/partition join."
+      ],
+      "obligation": "Compile the concrete directed-order proof in active Mathlib."
+    },
+    "G2_COMPACT": {
+      "status": "OWED",
+      "evidence": [],
+      "obligation": "Prove compact containment, normalization, mass bounds, and closed constraints."
+    },
+    "G3_EXTRACT": {
+      "status": "BLOCKED",
+      "evidence": [],
+      "obligation": "Extract a cluster point or convergent subnet only after G2 passes."
+    },
+    "G4_CLOSED": {
+      "status": "OWED",
+      "evidence": [],
+      "obligation": "Prove direction, incidence, and quantitative shading closure."
+    },
+    "G5_TRANSFER": {
+      "status": "OWED",
+      "evidence": [],
+      "obligation": "Prove continuity or semicontinuity for one named observable."
+    }
+  },
+  "lean_receipt": {
+    "status": "PLANNED / NOT COMPILED",
+    "compiled": false,
+    "mathlib_revision": "NOT RECORDED"
+  },
+  "evaluator_independent": false,
+  "promotion_authorized": false,
+  "claim_boundaries": [
+    "No compactness theorem is established for the proposed carrier.",
+    "No convergent subnet is claimed before G2 passes.",
+    "No Kakeya admissibility or observable-transfer theorem is established.",
+    "Framework L2_C receives no analytic structure from its notation.",
+    "No RH, Coleman, or faithful-kappa bridge is changed."
+  ],
+  "falsifier": "A refinement family without common upper bounds or a convergent family whose incidence observable transfers in the wrong direction.",
+  "kill_criterion": "Abandon the carrier if it loses position-direction-incidence coupling or yields no useful transfer lemma.",
+  "source_refs": [
+    "https://www.math.toronto.edu/ivan/mat327/docs/other/nets.pdf",
+    "https://www.math.toronto.edu/ivan/mat327/docs/notes/16-compact.pdf",
+    "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Compactness/Compact.html"
+  ],
+  "h_eval": {
+    "bound": "< 1",
+    "passed": true
+  }
+}

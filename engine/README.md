@@ -12,6 +12,7 @@ Controlling custody architecture for Excellence Engine V4.
 | `h-evaluator-bound.md` | h < 1 non-sovereignty |
 | `inspectable-intelligence.md` | II.1 link |
 | `engine-pipeline.md` | Receive→…→Publish |
+| `multiscale-compactness-gate.md` | Product-directed configurations and finite-to-limit custody |
 
 ```text
 EEV4-valid(q,t) ⇔ L²_C(q,t) ∧ β_continuity(q,t) > 0 ∧ HELD_t(q)

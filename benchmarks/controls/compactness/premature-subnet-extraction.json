@@ -1,0 +1,18 @@
+{
+  "control_id": "compactness-premature-subnet-extraction",
+  "mutations": [
+    {
+      "path": "gates.G3_EXTRACT.status",
+      "value": "PASS"
+    },
+    {
+      "path": "gates.G3_EXTRACT.evidence",
+      "value": [
+        "Claimed extraction without compactness."
+      ]
+    }
+  ],
+  "expected_errors": [
+    "fail:g3_before_g2"
+  ]
+}

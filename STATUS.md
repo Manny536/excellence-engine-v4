@@ -1,7 +1,7 @@
 # STATUS — Excellence Engine V4
 
 **Repository:** `Manny536/excellence-engine-v4`  
-**Updated:** 2026-08-07
+**Updated:** 2026-08-23
 **Controlling designation:** `PEAICE-KAKEYALOGIC-EEV4-HELD-001`  
 **Discipline:** `h < 1` · RH OPEN · Coleman OPEN
 
@@ -38,6 +38,11 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 | BD-AI trajectory reference | `SOURCE-REGISTERED` | Christchurch/Buffalo retrospective public records |
 | BD-AI multi-case benchmark | `OWED` | Preregistered controls, raters, and intervention-harm measures owed |
 | II.1 measurement badge | `OWED` | Definitions FORMAL |
+| Multiscale configuration net | `PROPOSED` | Product-directed scale/refinement interface |
+| Configuration carrier compactness | `OWED` | Current terminal state `BLOCKED-COMPACTNESS` |
+| Kakeya limit preservation | `OPEN` | Direction, incidence, shading, and observable transfer owed |
+| L²_C analytic realization | `OPEN` | Framework notation supplies no Hilbert-space theorem |
+| Net-gate interpretability | `OPEN` | Independent evaluator study owed |
 | RH | `OPEN` | |
 | Coleman Conjecture | `OPEN` | |
 
@@ -49,10 +54,16 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 4. Advance the validated Outcomes trace and BD-AI Case 01 into a preregistered multi-case benchmark.
 5. Test trajectory recognition without person-level profiling, covert monitoring, or needless amplification.
 6. Site content refresh when public EEV page should name V4 (publisher sync).
+7. Prove compact containment for the multiscale configuration carrier before extraction.
+8. Prove Kakeya closure and one continuity/semicontinuity transfer lemma.
+9. Compile the directed-order skeleton in the active Mathlib revision.
 
 Paper keys, exact citations, source-snapshot hashes, and use boundaries:
 [`references/README.md`](references/README.md) ·
 [`registry/paper-references.json`](registry/paper-references.json).
+
+Multiscale topology and formalization sources:
+[`references/multiscale-topology.md`](references/multiscale-topology.md).
 
 ## Repository-head references
 
