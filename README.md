@@ -1,3 +1,5 @@
+![Excellence Engine V4 geometric reality space](assets/excellence-engine-v4-geometric-reality-space.png)
+
 # Excellence Engine V4
 
 **Repository:** [`Manny536/excellence-engine-v4`](https://github.com/Manny536/excellence-engine-v4)  
