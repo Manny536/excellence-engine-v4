@@ -12,7 +12,7 @@ Lab structure siblings: [KakeyaLogic](https://github.com/Manny536/kakeyalogic) Â
 
 ---
 
-## Seven-minute orientation
+## EE V4
 
 Excellence Engine V4 evaluates whether intelligence can preserve a **typed research object** through evidence, correction, revision, and publication without **premature dismissal** or **premature promotion**.
 
