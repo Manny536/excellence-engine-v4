@@ -7,7 +7,7 @@
 
 Controlling definition: [KL-SIUS-001](https://github.com/Manny536/kakeyalogic/blob/main/docs/core/safeguard-integrity-under-stagnation.md). Benchmark: [LCA-SIUS-CAL-001](https://github.com/Manny536/LoveLabs-LCA/blob/main/docs/sius-operational-outcomes.md). Dependency: [L2C-SIUS-DEP-001](https://github.com/Manny536/love2-coherence-core/blob/main/docs/sius-dependency.md).
 
-Standalone basis: [SIUS Integrity.docx](https://github.com/Manny536/researchengineeringreports/blob/main/reports/sources/SIUS%20Integrity.docx), supplied by the user in “Explain sticky sets.” [Source provenance and limits](https://github.com/Manny536/researchengineeringreports/blob/main/reports/sources/sius-integrity-provenance.md).
+Standalone basis: [SIUS Integrity.docx](https://github.com/Manny536/researchengineeringreports/blob/main/reports/sources/sius-integrity-provenance.md), supplied by the user in “Explain sticky sets.” [Source provenance and limits](https://github.com/Manny536/researchengineeringreports/blob/main/reports/sources/sius-integrity-provenance.md).
 
 ## Scope and entry conditions
 
