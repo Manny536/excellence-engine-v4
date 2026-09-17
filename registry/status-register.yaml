@@ -1,7 +1,7 @@
 {
   "version": 3,
   "release": "R1-candidate",
-  "updated": "2026-08-23",
+  "updated": "2026-09-16",
   "engine": "V4 = K→R · HELD",
   "h": "< 1",
   "entries": [
@@ -24,6 +24,8 @@
     {"id": "configuration_carrier_compactness", "status": "OWED"},
     {"id": "kakeya_limit_preservation", "status": "OPEN"},
     {"id": "l2c_analytic_realization", "status": "OPEN"},
-    {"id": "net_gate_interpretability", "status": "OPEN"}
+    {"id": "net_gate_interpretability", "status": "OPEN"},
+    {"id": "EEV4-SIUS-EVAL-001", "program_id": "PEAICE-SIUS-001", "status": "EVALUATION-CONTRACT", "source": "evaluations/sius-held-correction.md"},
+    {"id": "operational_sius_validity", "program_id": "PEAICE-SIUS-001", "status": "OPEN"}
   ]
 }
