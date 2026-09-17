@@ -110,3 +110,13 @@ Source: Claude-authored package integrated 2026-08-01 · `excellence_engine_v4/`
 | Sovereignty telemetry | `h_claim > 1` 🔴 overreach · system `h < 1` unchanged |
 | Route | MM observation → RAG verification → MCP boundary → L²_C outcome |
 | Promotion | NON-PROMOTING · no universal policy bypass |
+
+## SIUS — PEAICE-SIUS-001
+
+| Object | Status |
+|---|---|
+| [EEV4-SIUS-EVAL-001](evaluations/sius-held-correction.md) | EVALUATION CONTRACT; implementation/adoption not asserted |
+| Operational SIUS validity | OPEN |
+| Finite-grain operator (KakeyaLogic-owned) | PROPOSED |
+
+SIUT remains a sibling condition. `h < 1`, independent evaluation and longitudinal correction retention remain required; no theorem or deployment claim is promoted.

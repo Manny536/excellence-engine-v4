@@ -239,3 +239,9 @@ Evaluation: [`evaluations/l2c-authority-detection.md`](evaluations/l2c-authority
 ## License & citation
 
 MIT · see [`LICENSE`](LICENSE) · [`CITATION.cff`](CITATION.cff)
+
+## SIUS registration — PEAICE-SIUS-001
+
+[EEV4-SIUS-EVAL-001](evaluations/sius-held-correction.md) — HELD/SIUS evaluation. **EVALUATION CONTRACT.** SIUT remains a sibling condition. The finite-grain operator is separately PROPOSED; no open claim is promoted.
+
+Controlling definition: [KL-SIUS-001](https://github.com/Manny536/kakeyalogic/blob/main/docs/core/safeguard-integrity-under-stagnation.md).
