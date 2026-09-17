@@ -91,4 +91,4 @@ Controlling designation: `PEAICE-L2C-AUTHORITY-DETECTION-001`. Local EEv4 design
 | `peaice-index` | [INDEX-SIUS-001](https://github.com/Manny536/peaice-index/blob/main/docs/sius.md) | Compressed public route | ROUTE ONLY |
 | `love2-coherence-core` | [L2C-SIUS-DEP-001](https://github.com/Manny536/love2-coherence-core/blob/main/docs/sius-dependency.md) | h < 1 and correction-retention dependency | DEPENDENCY POINTER |
 
-The standalone DOCX provenance is registered by the report repository; the original file remains author-held. KakeyaLogic alone controls the SIUS definition; its operator note `KL-SIUS-OP-001` remains PROPOSED. SIUT is preserved as a sibling condition. Cross-repository registration is not independent validation.
+The standalone DOCX, Markdown edition and provenance are published by the report repository. KakeyaLogic alone controls the SIUS definition; its operator note `KL-SIUS-OP-001` remains PROPOSED. SIUT is preserved as a sibling condition. Cross-repository registration is not independent validation.

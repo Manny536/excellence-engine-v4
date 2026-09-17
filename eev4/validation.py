@@ -34,6 +34,8 @@ REQUIRED_STATUS = {
     "kakeya_limit_preservation": "OPEN",
     "l2c_analytic_realization": "OPEN",
     "net_gate_interpretability": "OPEN",
+    "EEV4-SIUS-EVAL-001": "EVALUATION-CONTRACT",
+    "operational_sius_validity": "OPEN",
 }
 
 REQUIRED_FINDINGS = {

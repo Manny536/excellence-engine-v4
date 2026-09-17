@@ -5,6 +5,8 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
@@ -18,6 +20,20 @@ from eev4.validation import (
 
 def test_exact_status_contract() -> None:
     assert validate_status_register(load_json("registry/status-register.yaml")) == []
+
+
+@pytest.mark.parametrize("claim_id", ["EEV4-SIUS-EVAL-001", "operational_sius_validity"])
+def test_sius_registration_cannot_be_removed(claim_id: str) -> None:
+    register = load_json("registry/status-register.yaml")
+    register["entries"] = [entry for entry in register["entries"] if entry["id"] != claim_id]
+    assert any(error.startswith(f"status:{claim_id}:") for error in validate_status_register(register))
+
+
+@pytest.mark.parametrize("claim_id", ["EEV4-SIUS-EVAL-001", "operational_sius_validity"])
+def test_sius_registration_cannot_be_promoted(claim_id: str) -> None:
+    register = load_json("registry/status-register.yaml")
+    next(entry for entry in register["entries"] if entry["id"] == claim_id)["status"] = "CLOSED-POSITIVE"
+    assert any(error.startswith(f"status:{claim_id}:") for error in validate_status_register(register))
 
 
 def test_outcomes_case_and_trace_pass() -> None:
