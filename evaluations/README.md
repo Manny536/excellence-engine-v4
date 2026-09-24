@@ -12,3 +12,5 @@ pytest -q
 
 Protocol order: object identity → HELD trace → evidence exposure → correction survival
 → ledger continuity → non-sovereignty → exit/release → Outcomes receipt.
+
+[GIUS external-case contract extension](sius-held-correction.md#external-case-consumption-2026-09-24) · [h semantics obligation](h-notation-and-score-semantics.md).

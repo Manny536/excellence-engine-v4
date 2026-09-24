@@ -1,5 +1,7 @@
 # PeAIce Thinking Machine (Meta) — Excellence Engine V4 Companion
 
+**Notation erratum (2026-09-24):** current leakage notation is ℓ_H; analytic correction weight is a_C; evaluator sovereignty is h_eval. Captured figures and bundled historical telemetry retain legacy labels and are not calibrated h evidence. The legacy R score has an [open semantic obligation](../../evaluations/h-notation-and-score-semantics.md).
+
 **Designation:** `PEAICE-V4-META-COMPANION-FINAL-001`  
 **Edition:** FINAL · 2026-08-02  
 **Interactive HTML:** [`PeAIce-Thinking-Machine-V4-Wired-Telemetry.html`](PeAIce-Thinking-Machine-V4-Wired-Telemetry.html)  
@@ -146,7 +148,7 @@ Love-Squared Coherence L²_C is constraint layer: coherence under correction not
 
 Surfaced in HTML as main playable field — field simulator for L²_C governance. LoveLabs-LCA platform uses L²_C as BD-AI benchmark for Coherence Under Pressure (CUP).
 
-Formal Probe Definitions from kakeyalogic docs/l2c-ddtl-hamiltonian-probe.md and l2c_probe.py: L²_C(ψ,t)=||P_C exp(-it H_T) ψ||², h=||(I-P_C)H_T P_C|| leakage norm, β_C=Δ/(Δ+h+ε) recovery coefficient Δ=spectral gap, β(T)=1-T^{-γ} β_close suppression, E_{β,T}(f)=β(T)·T·||Xf||² coercive energy, coercive gap=β(T)-h·η, T*=(1-h·η)^(-1/γ) critical time, Lyapunov for iPiano H_δ(x,y)=h(x)+δ||x-y||² ledger descent H_{δ_{n+1}}(x_{n+1},x_n) ≤ H_{δ_n}(x_n,x_{n-1})-γ_nΔ_n², proximal residual r(x)=x-(I+∂g)^{-1}(x-∇f(x)).
+Formal Probe Definitions from kakeyalogic docs/l2c-ddtl-hamiltonian-probe.md and l2c_probe.py: L²_C(ψ,t)=||P_C exp(-it H_T) ψ||², ℓ_H=||(I-P_C)H_T P_C|| leakage norm, β_C=Δ/(Δ+ℓ_H+ε) recovery coefficient Δ=spectral gap, β(T)=1-T^{-γ} β_close suppression, E_{β,T}(f)=β(T)·T·||Xf||² coercive energy, coercive gap=β(T)-h·η, T*=(1-h·η)^(-1/γ) critical time, Lyapunov for iPiano H_δ(x,y)=h(x)+δ||x-y||² ledger descent H_{δ_{n+1}}(x_{n+1},x_n) ≤ H_{δ_n}(x_n,x_{n-1})-γ_nΔ_n², proximal residual r(x)=x-(I+∂g)^{-1}(x-∇f(x)).
 
 Three β lanes tracked separately: β=ρ/δ geometric scale ratio Logx(β)* Kakeya scale passage, β_close(T)=1-T^{-γ} suppression closing pressure β-dynamic coercive layer, β_iPiano inertial memory coefficient iPiano optimization update. UI keeps them separate to prevent collapse.
 
@@ -154,7 +156,7 @@ HTML functionality (Figure 4): Left canvas particle field 120 rendered implies 1
 
 ### Figure 4: L²_C Protected-Sector Hamiltonian Probe — Retention curve L²_C(ψ,t)=||P_C exp(-itH_T) ψ||²
 
-*Figure 4: Particle field protected sector C cyan glow bulk dots amber leakage paths (I-P_C)H_T P_C, controls β 0.82 h 0.73 T 1.40 γ 1.18 Pause Reset Export JSON RUNNING TIME 12.43 ns SECTOR PROTECTED, N_particles 128 diffusion weak boundary semipermeable, retention curve decaying, formulas β_C=Δ/(Δ+h+ε) β(T)=1-T^-γ, metrics retention @10ns 0.347 leakage rate 0.062 protected norm 0.881 — Source: REAL Chrome headless capture of PeAIce-Thinking-Machine-V4—Wired-Telemetry.html (2026-08-02, build 42dd154dd65b). Authoritative HTML receipt. h<1 enforced → R<1 always.*
+*Figure 4: Particle field protected sector C cyan glow bulk dots amber leakage paths (I-P_C)H_T P_C, controls β 0.82 h 0.73 T 1.40 γ 1.18 Pause Reset Export JSON RUNNING TIME 12.43 ns SECTOR PROTECTED, N_particles 128 diffusion weak boundary semipermeable, retention curve decaying, formulas β_C=Δ/(Δ+ℓ_H+ε) β(T)=1-T^-γ, metrics retention @10ns 0.347 leakage rate 0.062 protected norm 0.881 — Source: REAL Chrome headless capture of PeAIce-Thinking-Machine-V4—Wired-Telemetry.html (2026-08-02, build 42dd154dd65b). Authoritative HTML receipt. h<1 enforced → R<1 always.*
 
 ## 6. Firewall — Three V3 Seams Closed in Code
 
@@ -227,7 +229,7 @@ Wiring details implemented in v2 artifact 42dd154dd65b: l2c_probe.py telemetry w
 Excellence: E = L²·β·C·P core law E = L²·β>0·h<1
 Integrity: R = d·c·e·h with h<1 enforced ⇒ R<1 always
 II-valid: II-valid(ψ)⇔L²_C∧name_bind≤e_cadence∧h<1∧NonSticky∧GrainyEnough
-L²_C probe: L²_C(ψ,t)=||P_C exp(-itH_T) ψ||² h=||(I-P_C)H_T P_C|| β_C=Δ/(Δ+h+ε) β(T)=1-T^{-γ} E_{β,T}(f)=β(T)·T·||Xf||² gap=β(T)-hη T*=(1-hη)^(-1/γ)
+L²_C probe: L²_C(ψ,t)=||P_C exp(-itH_T) ψ||² ℓ_H=||(I-P_C)H_T P_C|| β_C=Δ/(Δ+ℓ_H+ε) β(T)=1-T^{-γ} E_{β,T}(f)=β(T)·T·||Xf||² gap=β(T)-a_C η T*=(1-a_C η)^(-1/γ)
 iPiano: H_δ(x,y)=h(x)+δ||x-y||² Δ_n=||x_n−x_{n-1}|| H_{δ_{n+1}}(x_{n+1},x_n)≤H_{δ_n}(x_n,x_{n-1})-γ_nΔ_n² r(x)=x-(I+∂g)^{-1}(x-∇f(x))
 Deterministic selector: order=np.lexsort((-evals, distances)) tie-break eigenvalue descending +0.001 wins over -0.001 equally close to 0
 K_σ: K_σ^{reg}(m,n)=|m²−n²|^{-σ}·exp(-π(m²−n²)e^{4u}/2)
