@@ -107,8 +107,10 @@ def integrity(d: float, c: float, e: float, h: float) -> float:
 
     Because 0 <= h < 1 and d, c, e in [0, 1], R is strictly < 1: integrity can
     approach but never certify to certainty. That strict ceiling is the FORMAL
-    consequence of evaluator non-sovereignty - it is not an assumption, it falls
-    out of h < 1.
+    consequence of the numeric bound, not proof of operational evaluator
+    non-sovereignty. This legacy h score factor is not calibrated h_eval
+    sovereignty load. Its polarity remains OPEN; see
+    evaluations/h-notation-and-score-semantics.md.
 
     SLOT NOT ON RECORD: d, c, e are R-slots whose canonical expansions are not on
     the record here. Provisionally: derivation-validity (d), internal-consistency

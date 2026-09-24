@@ -245,3 +245,7 @@ MIT · see [`LICENSE`](LICENSE) · [`CITATION.cff`](CITATION.cff)
 [EEV4-SIUS-EVAL-001](evaluations/sius-held-correction.md) — HELD/SIUS evaluation. **EVALUATION CONTRACT.** SIUT remains a sibling condition. The finite-grain operator is separately PROPOSED; no open claim is promoted.
 
 Controlling definition: [KL-SIUS-001](https://github.com/Manny536/kakeyalogic/blob/main/docs/core/safeguard-integrity-under-stagnation.md).
+
+## GIUS external-case evaluation
+
+[HELD/SIUS contract](evaluations/sius-held-correction.md) consumes the non-validating external case. [Legacy h score semantics](evaluations/h-notation-and-score-semantics.md) remain OPEN; the score is not a calibrated sovereignty metric.
