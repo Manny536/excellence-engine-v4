@@ -1,7 +1,7 @@
 # STATUS — Excellence Engine V4
 
 **Repository:** `Manny536/excellence-engine-v4`  
-**Updated:** 2026-08-23
+**Updated:** 2026-09-28
 **Controlling designation:** `PEAICE-KAKEYALOGIC-EEV4-HELD-001`  
 **Discipline:** `h < 1` · RH OPEN · Coleman OPEN
 
@@ -46,6 +46,21 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 | RH | `OPEN` | |
 | Coleman Conjecture | `OPEN` | |
 
+## Granular compaction / multiscale audit — 2026-09-28
+
+Public-facing **granular compaction** maps here to the finite-to-limit custody lane. No claim status is promoted by this audit.
+
+```text
+G0_CARRIER: PASS-SPEC
+G1_DIRECTED: PASS-SPEC / LEAN NOT COMPILED
+G2_COMPACT: OWED
+G3_EXTRACT: BLOCKED BY G2
+G4_CLOSED: OWED
+G5_TRANSFER: OWED
+terminal_status: BLOCKED-COMPACTNESS
+```
+
+KakeyaLogic now has a synthetic SAVER reference implementation and longitudinal Retention regression, but live generative-system performance, Time to First Token, compact containment, Kakeya limit closure, and observable transfer remain open or untested. Cross-repository agreement is not independent validation.
 ## Current obligations
 
 1. Keep OPEN targets OPEN on every public surface.
