@@ -1,0 +1,2 @@
+# Preserve the supplied HTML receipt byte-for-byte, including original whitespace.
+evidence/assets/gemini-granular-compaction-2026-09-28/ucsb-granular-materials.html -whitespace

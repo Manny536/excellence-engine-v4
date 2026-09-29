@@ -1,10 +1,10 @@
 # Granular compaction — live external-model evidence
 
-**Receipt:** `LIVE-EXT-OBS-001`  
-**Observation status:** **LIVE EXTERNAL-MODEL OBSERVATION**  
-**Hypothesis:** `LIVE-EXT-CAUSE-001`  
-**Claim status:** **CAUSAL INFERENCE · LIVE OBSERVATION · CONTROLLED ABLATION OWED**  
-**Registered:** 2026-09-28 (America/Los_Angeles; capture timestamps unknown)  
+**Receipt:** `LIVE-EXT-OBS-001`
+**Observation status:** **LIVE EXTERNAL-MODEL OBSERVATION**
+**Hypothesis:** `LIVE-EXT-CAUSE-001`
+**Claim status:** **CAUSAL INFERENCE · LIVE OBSERVATION · CONTROLLED ABLATION OWED**
+**Registered:** 2026-09-28 (America/Los_Angeles; capture timestamps unknown)
 **Discipline:** `h < 1` · SAVER · RH OPEN · Coleman OPEN · `BLOCKED-COMPACTNESS`
 
 ## Scope and supersession
