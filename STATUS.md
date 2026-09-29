@@ -44,6 +44,8 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 | L²_C analytic realization | `OPEN` | Framework notation supplies no Hilbert-space theorem |
 | Net-gate interpretability | `OPEN` | Independent evaluator study owed |
 | External-model granular synthesis (`LIVE-EXT-OBS-001`) | **LIVE EXTERNAL-MODEL OBSERVATION** | User-attributed Gemini; Google Search / AI Overview screenshots show PeAIce/KakeyaLogic-related output and multiple source cards. Backend version and retrieval trace unknown. |
+| KakeyaLogic indexing | **OBSERVED · UNSTABLE** | Three presentations of the name are visible: classical Besicovitch/conjecture text, a spelling-neighbor row plus a mathematics-versus-gaming split, and a compaction overview that still appends the mathematical namesake. Cards are not labeled by private versus logged-in session. |
+| Ladder preservation under that indexing | **NOT OBSERVED** | The status list, Grain Zero residual order, closed-negative lanes, and this gate's G2 block do not reappear as recovered order. The classical apparatus (Perron tree, Fourier, sticky tube, Wikipedia Kakeya set, Wang–Zahl) appears beside or instead of that order. |
 | Framework contribution (`LIVE-EXT-CAUSE-001`) | **CAUSAL INFERENCE · LIVE OBSERVATION · CONTROLLED ABLATION OWED** | Hypothesis about the public information environment; no internal implementation or causal proof established. |
 | Live SAVER preservation / longitudinal correction retention | `OPEN` / `OWED` | Screenshots do not validate all five grains or a repeated matched live protocol. |
 | RH | `OPEN` | |
@@ -64,6 +66,8 @@ terminal_status: BLOCKED-COMPACTNESS
 ```
 
 KakeyaLogic has a synthetic SAVER reference implementation and longitudinal Retention regression. A separate **LIVE EXTERNAL-MODEL OBSERVATION** now records user-provided Google AI Overview screenshots (Gemini attribution supplied by the user): PeAIce/KakeyaLogic-related synthesis appears alongside multiple indexed-source cards. This is output-level evidence; exact hidden citations, source correctness and the underlying retrieval mechanism are not all verified.
+
+Those screenshots also separate KakeyaLogic indexing from the ladders. Indexing of the public name is **OBSERVED · UNSTABLE**. Preservation of the held ladders under that indexing is **NOT OBSERVED**. Both labels apply to the supplied visible captures. The pixel reading is in the evidence note under “Indexing versus the ladders.” A search paragraph is not a rung, and it does not move G2.
 
 `LIVE-EXT-CAUSE-001` is registered as **CAUSAL INFERENCE · LIVE OBSERVATION · CONTROLLED ABLATION OWED**. The hypothesis is that KakeyaLogic/L²_C-shaped public objects help downstream recovery. The screenshots establish neither causality nor that Gemini internally implements KakeyaLogic/L²_C. They also do not establish that no full site was consumed.
 
