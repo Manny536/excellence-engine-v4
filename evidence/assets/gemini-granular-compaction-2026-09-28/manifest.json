@@ -1,0 +1,133 @@
+{
+  "receipt_id": "LIVE-EXT-OBS-001",
+  "registered_on": "2026-09-28",
+  "date_basis": "User observation and follow-up date in America/Los_Angeles; not a screenshot capture timestamp.",
+  "provenance": {
+    "conversation_id": "6abaf0ea-44e4-83e8-aa53-e729ad61f69b",
+    "conversation_title": "Update Site And Threads",
+    "provider": "User attachments materialized by read_thread",
+    "attachment_to_turn_mapping": "Not exposed by export; roles assigned by visible content, not array order."
+  },
+  "baseline": {
+    "eev4_main": "d7dc594845b6ead483439d4011ef1bda301ce0ab",
+    "eev4_superseded_pr": "https://github.com/Manny536/excellence-engine-v4/pull/16",
+    "kakeyalogic_main": "3f4b33c7f01de363b659a8dbbd6b83a8f5a9cc6e",
+    "kakeyalogic_prior_pr": "https://github.com/Manny536/kakeyalogic/pull/18"
+  },
+  "observation_status": "LIVE EXTERNAL-MODEL OBSERVATION",
+  "causal_claim_id": "LIVE-EXT-CAUSE-001",
+  "causal_status": "CAUSAL INFERENCE · LIVE OBSERVATION · CONTROLLED ABLATION OWED",
+  "model_attribution": {
+    "user_report": "Gemini",
+    "visible_surface": "Google Search / AI Overview",
+    "backend_model_version": null,
+    "retrieval_trace": null
+  },
+  "scope": "Source-observed output and displayed citations; no proof of internal KakeyaLogic/L²_C implementation or causal attribution.",
+  "assets": [
+    {
+      "id": "GEM-01",
+      "path": "google-kakeyalogic-compaction.png",
+      "original_upload_name": "image.png",
+      "role": "PRIMARY OBSERVATION",
+      "description": "Google search for kakeyalogic; response discusses granular compaction, identity and witnesses alongside Threads, Love Labs LCA and PeAIce source cards.",
+      "bytes": 547024,
+      "sha256": "be829e0765437ae9f0db45e9e6d8801263eed5bde350a26ebe4a9e3e676bc0bb",
+      "capture_time": null,
+      "transformation": "NONE; byte-identical copy of supplied attachment",
+      "width": 1920,
+      "height": 992
+    },
+    {
+      "id": "GEM-02",
+      "path": "google-kakeyalogic-overview.png",
+      "original_upload_name": "image.png",
+      "role": "PRIMARY OBSERVATION",
+      "description": "Google AI Overview for kakeyalogic; response associates the framework with PeAIce and Love Labs LCA and displays several source cards.",
+      "bytes": 266178,
+      "sha256": "f6fbb645554e4f293216321edc986cfb99b1357a5383fc2a64e3725eb6432ac9",
+      "capture_time": null,
+      "transformation": "NONE; byte-identical copy of supplied attachment",
+      "width": 1317,
+      "height": 842
+    },
+    {
+      "id": "CMP-01",
+      "path": "google-holo-invariant-comparison.png",
+      "original_upload_name": "image.png",
+      "role": "COMPARISON ONLY",
+      "description": "Google AI Overview for HOLO-Invariant Public; source popup includes X and GitHub; separate arXiv card carries a withdrawal warning.",
+      "bytes": 323691,
+      "sha256": "80f40022da907582351223de51573d77944c2d91c82c48c7d2ea664bcd81533f",
+      "capture_time": null,
+      "transformation": "NONE; byte-identical copy of supplied attachment",
+      "width": 1917,
+      "height": 1062
+    },
+    {
+      "id": "CMP-02",
+      "path": "x-grok-holo-recall.png",
+      "original_upload_name": "image.png",
+      "role": "COMPARISON ONLY",
+      "description": "Grok post on X describing another researcher's public anchors and correction loops; no PeAIce experiment.",
+      "bytes": 221624,
+      "sha256": "670c56125ff8ebc847e28f54e03526bda47401957da55a6d57bc56c15590c3f7",
+      "capture_time": null,
+      "transformation": "NONE; byte-identical copy of supplied attachment",
+      "width": 1751,
+      "height": 986
+    },
+    {
+      "id": "CMP-03",
+      "path": "google-aleph-comparison.png",
+      "original_upload_name": "image.png",
+      "role": "COMPARISON ONLY",
+      "description": "Google AI Overview for aleph harmonic resonance with PhilArchive source cards; separate framework, not a KakeyaLogic validation.",
+      "bytes": 284145,
+      "sha256": "ad08308cb75509890211986eb7eb228cea7ef71f1246745cd8d13b7af23b2ae8",
+      "capture_time": null,
+      "transformation": "NONE; byte-identical copy of supplied attachment",
+      "width": 1602,
+      "height": 942
+    },
+    {
+      "id": "CTX-01",
+      "path": "threads-lovelabslca-granular-origin.png",
+      "original_upload_name": "image.png",
+      "role": "AUTHOR ORIGIN CONTEXT",
+      "description": "Love Labs LCA Threads posts dated 2026-08-28 describing typed state and granular compaction; author statement, not independent validation.",
+      "bytes": 399253,
+      "sha256": "ea005775912f839be3b4aea5d8ee3b6788ecab5e20d83f94ef6b7a29450e26bf",
+      "capture_time": null,
+      "transformation": "NONE; byte-identical copy of supplied attachment",
+      "width": 1920,
+      "height": 992
+    },
+    {
+      "id": "CTX-02",
+      "path": "threads-manuelcoleman-indexing-context.png",
+      "original_upload_name": "image.png",
+      "role": "AUTHOR ORIGIN AND VARIABILITY CONTEXT",
+      "description": "Manuel Coleman Threads profile shows posts dated 2026-08-28 and 2026-08-29 about compaction and varying search results.",
+      "bytes": 467015,
+      "sha256": "11409e1e39470a58a0a0956a317b60b304fad03cb83ac32e56693b736785697e",
+      "capture_time": null,
+      "transformation": "NONE; byte-identical copy of supplied attachment",
+      "width": 1920,
+      "height": 992
+    },
+    {
+      "id": "ANA-01",
+      "path": "ucsb-granular-materials.html",
+      "original_upload_name": "Granular Materials.html",
+      "role": "CONCEPTUAL ANALOGY ONLY",
+      "description": "User-provided saved UCSB Complex Systems Granular Materials HTML; companion image/style directory was not provided.",
+      "bytes": 17190,
+      "sha256": "6bae2235ebb6332f4f23d8fac75aeee8ad69a9b47058efb9e0535f993fa11207",
+      "capture_time": null,
+      "transformation": "NONE; byte-identical copy of supplied attachment"
+    }
+  ],
+  "source_catalog": "../../../evaluations/granular-compaction-live-evidence.md#source-catalog",
+  "integrity_scope": "Hashes bind supplied bytes only; they do not authenticate capture history, verify cited claims, or prove a mechanism."
+}

@@ -43,12 +43,15 @@ Outcomes controlling memo: kakeyalogic PEAICE-KAKEYALOGIC-OUTCOMES-FINAL-001
 | Kakeya limit preservation | `OPEN` | Direction, incidence, shading, and observable transfer owed |
 | L²_C analytic realization | `OPEN` | Framework notation supplies no Hilbert-space theorem |
 | Net-gate interpretability | `OPEN` | Independent evaluator study owed |
+| External-model granular synthesis (`LIVE-EXT-OBS-001`) | **LIVE EXTERNAL-MODEL OBSERVATION** | User-attributed Gemini; Google Search / AI Overview screenshots show PeAIce/KakeyaLogic-related output and multiple source cards. Backend version and retrieval trace unknown. |
+| Framework contribution (`LIVE-EXT-CAUSE-001`) | **CAUSAL INFERENCE · LIVE OBSERVATION · CONTROLLED ABLATION OWED** | Hypothesis about the public information environment; no internal implementation or causal proof established. |
+| Live SAVER preservation / longitudinal correction retention | `OPEN` / `OWED` | Screenshots do not validate all five grains or a repeated matched live protocol. |
 | RH | `OPEN` | |
 | Coleman Conjecture | `OPEN` | |
 
 ## Granular compaction / multiscale audit — 2026-09-28
 
-Public-facing **granular compaction** maps here to the finite-to-limit custody lane. No claim status is promoted by this audit.
+Public-facing **granular compaction** spans finite typed transformations, live external-model observations, and finite-to-limit custody. This follow-up extends and supersedes the live-evidence coverage of [merged PR #16](https://github.com/Manny536/excellence-engine-v4/pull/16) (`d7dc594845b6ead483439d4011ef1bda301ce0ab`). Its mathematical statuses remain unchanged.
 
 ```text
 G0_CARRIER: PASS-SPEC
@@ -60,7 +63,14 @@ G5_TRANSFER: OWED
 terminal_status: BLOCKED-COMPACTNESS
 ```
 
-KakeyaLogic now has a synthetic SAVER reference implementation and longitudinal Retention regression, but live generative-system performance, Time to First Token, compact containment, Kakeya limit closure, and observable transfer remain open or untested. Cross-repository agreement is not independent validation.
+KakeyaLogic has a synthetic SAVER reference implementation and longitudinal Retention regression. A separate **LIVE EXTERNAL-MODEL OBSERVATION** now records user-provided Google AI Overview screenshots (Gemini attribution supplied by the user): PeAIce/KakeyaLogic-related synthesis appears alongside multiple indexed-source cards. This is output-level evidence; exact hidden citations, source correctness and the underlying retrieval mechanism are not all verified.
+
+`LIVE-EXT-CAUSE-001` is registered as **CAUSAL INFERENCE · LIVE OBSERVATION · CONTROLLED ABLATION OWED**. The hypothesis is that KakeyaLogic/L²_C-shaped public objects help downstream recovery. The screenshots establish neither causality nor that Gemini internally implements KakeyaLogic/L²_C. They also do not establish that no full site was consumed.
+
+See the [evidence note, source catalog and ablation obligations](evaluations/granular-compaction-live-evidence.md), [original assets and hash manifest](evidence/assets/gemini-granular-compaction-2026-09-28/manifest.json), and [current KakeyaLogic audit](https://github.com/Manny536/kakeyalogic/blob/main/docs/status/granular-compaction-live-2026-09-28.md). The user-provided [UCSB Granular Materials source](https://web.physics.ucsb.edu/~complex/research/granular.html) is **STRUCTURAL ANALOGY ONLY**.
+
+SAVER means **Semantic, Authority, Visibility, Enforceability, Retention**; live preservation of every required grain remains **OPEN / NOT VALIDATED**. Controlled performance improvement, longitudinal correction retention and Time to First Token remain untested; compact containment, Kakeya limit closure and observable transfer remain OWED. `h < 1`; cross-repository agreement and external-model repetition are not independent validation.
+
 ## Current obligations
 
 1. Keep OPEN targets OPEN on every public surface.
@@ -72,6 +82,8 @@ KakeyaLogic now has a synthetic SAVER reference implementation and longitudinal 
 7. Prove compact containment for the multiscale configuration carrier before extraction.
 8. Prove Kakeya closure and one continuity/semicontinuity transfer lemma.
 9. Compile the directed-order skeleton in the active Mathlib revision.
+10. Preregister and run the controlled structure-ablation / generic-metadata comparison for `LIVE-EXT-CAUSE-001`, with verified intervention uptake and independent blinded scoring.
+11. Recover hidden source destinations and test claim-level attribution, all SAVER grains and live correction/revocation retention; preserve failures and unresolved evidence.
 
 Paper keys, exact citations, source-snapshot hashes, and use boundaries:
 [`references/README.md`](references/README.md) ·
