@@ -6,9 +6,10 @@ Love Labs LCA · Excellence Engine v4 (EEv4) · November 11, 2026
 | --- | --- |
 | [Solance research note](solance-research.md) | Literature, live source-recovery evidence, four original screenshots, and evidence limits |
 | [Evaluation protocol](protocol.md) | Hypothesis, experimental arms, compaction and verification algorithms, and decision rule |
+| [Frozen procedure and standing \(h < 1\)](frozen-and-standing-h.md) | Pre-run freeze procedure, the one standing meaning of \(h < 1\), the 4,096-byte UTF-8 context cap, and items still open |
 | [Python audit library](../../eev4/compaction_audit/) | Frozen fixtures, deterministic planning and scoring, and OpenAI and Gemini HTTPS adapters |
 | [Regression tests](../../tests/test_compaction_audit.py) | Receipt binding, evaluator behavior, controls, and provider response handling |
-| [AIce handoff](https://github.com/Manny536/AIce/pull/12) | Downstream research brief and screenshot record |
+| [AIce handoff](https://github.com/Manny536/AIce/pull/12) | Downstream research brief and screenshot record: [PR #12](https://github.com/Manny536/AIce/pull/12) merged as [`02ce58a`](https://github.com/Manny536/AIce/commit/02ce58a48df172f0168715f27ee8b63f00d30f70) (Definition: Frozen); [PR #13](https://github.com/Manny536/AIce/pull/13) merged as [`fce4a41`](https://github.com/Manny536/AIce/commit/fce4a413945d76b26ff4a39ce79c20be38957bed) (standing meaning of \(h < 1\)) |
 
 **Evidence status.** Targeted live source recovery passed. The offline audit exercises the harness with scripted answers and deliberately injected failures. Controlled GPT and Gemini performance remains open.
 
