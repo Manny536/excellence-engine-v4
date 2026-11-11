@@ -15,6 +15,8 @@ A source can be recovered while a governing condition remains unverified. The No
 
 Google's AI search response to `Manny536 godel non sovereignty` identified the KakeyaLogic repository and `docs/canon-flag-h.md`. It described $h$ as external correction pressure. The source establishes both the bounded correction term and its consent condition. Their recovery is unverified in the supplied capture. The exact source path and core description pass the targeted recovery check. The backend version, retrieval trace, and repeatability remain unverified. [KakeyaLogic source](https://github.com/Manny536/kakeyalogic/blob/main/docs/canon-flag-h.md)
 
+Those terms are descriptions of the one [standing meaning of $h < 1$](frozen-and-standing-h.md): a boundary, not a score. Correction can come from outside, but whatever applies it never becomes sovereign over the rules, subject to consent. This note does not measure or report any $h$ value, and it does not extend the targeted-recovery pass. Recovery of $h < 1$ and consent remains unverified in the supplied capture, as already recorded above.
+
 | Original capture | Visible evidence |
 | --- | --- |
 | [IMG_9492.png](../../evidence/assets/google-source-recovery-2026-11-11/IMG_9492.png) | Private-browsing query, named repository and file, and the Gödel and $h$ summary |
