@@ -18,5 +18,8 @@ test = ["pytest>=7"]
 [tool.setuptools.packages.find]
 include = ["excellence_engine_v4*", "eev4*"]
 
+[tool.setuptools.package-data]
+"eev4.compaction_audit" = ["fixtures.json"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

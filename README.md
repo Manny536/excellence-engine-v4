@@ -215,6 +215,10 @@ Designation: `PEAICE-V4-META-COMPANION-FINAL-001` · instrument for custody test
 
 Evaluation: [`evaluations/l2c-authority-detection.md`](evaluations/l2c-authority-detection.md) · primary definition: [KakeyaLogic](https://github.com/Manny536/kakeyalogic/blob/main/docs/l2c-authority-detection.md).
 
+## Cross-model compaction audit
+
+The [research package](evaluations/cross-model-compaction/README.md) includes the Solance research note, live source-recovery evidence, a frozen synthetic corpus, and a reproducible Python audit for correction and revocation across GPT and Gemini. Offline verification and live-model collection have separate commands and evidence statuses.
+
 ## Quick links
 
 | Path | Role |
