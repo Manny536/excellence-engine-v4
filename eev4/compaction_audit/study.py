@@ -9,7 +9,7 @@ import statistics
 from collections import defaultdict
 from importlib.resources import files
 
-STUDY = "eev4-cross-model-compaction-v1"
+STUDY = "eev4-cross-model-compaction-v2"
 PROVIDERS = ("gemini", "openai")
 CONDITIONS = ("full", "generic", "typed", "ablated")
 CHECKPOINTS = ("correction", "revocation")
@@ -186,6 +186,7 @@ def build_index(plan, records):
     by_id = {job["id"]: job for job in plan["jobs"]}
     plan_sha = digest(canonical(plan))
     found = {}
+    collection_id = None
     for receipt in records:
         job_id = receipt["id"]
         job = by_id.get(job_id)
@@ -201,6 +202,12 @@ def build_index(plan, records):
         if ("output" in receipt) == ("error" in receipt):
             raise ValueError(f"Receipt must carry one output or transport error for {job_id}")
         if receipt["mode"] == "live":
+            receipt_collection = receipt.get("collection_id")
+            if not isinstance(receipt_collection, str) or not receipt_collection.strip():
+                raise ValueError(f"Live receipt lacks collection ID for {job_id}")
+            if collection_id is not None and receipt_collection != collection_id:
+                raise ValueError("Mixed live collection IDs")
+            collection_id = receipt_collection
             if (
                 not isinstance(receipt.get("request"), dict)
                 or not isinstance(receipt.get("requested_model"), str)
@@ -237,7 +244,8 @@ def _token_stats(values):
 
 def summarize(plan, records):
     found = build_index(plan, records)
-    mode = next(iter(found.values()))["mode"] if found else "uncollected"
+    first_receipt = next(iter(found.values()), {})
+    mode = first_receipt.get("mode", "uncollected")
     keys = answer_keys()
     sessions, fields, tokens, observed_models, requested_models = (
         defaultdict(dict), defaultdict(int), defaultdict(list), defaultdict(set), defaultdict(set)
@@ -322,6 +330,7 @@ def summarize(plan, records):
     return {
         "study": STUDY,
         "mode": mode,
+        "collection_id": first_receipt.get("collection_id") if mode == "live" else None,
         "plan_sha256": digest(canonical(plan)),
         "received": len(found),
         "planned": len(plan["jobs"]),

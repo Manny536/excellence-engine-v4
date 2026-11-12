@@ -5,6 +5,7 @@ from urllib.error import HTTPError
 import pytest
 
 from eev4.compaction_audit import providers, study
+from eev4.compaction_audit.__main__ import live_records
 
 
 def test_plan_is_frozen_and_has_two_ordered_checkpoints():
@@ -69,6 +70,39 @@ def test_single_grain_failure_blocks_checkpoint():
     assert not any(study.evaluate_output(duplicated, expected).values())
 
 
+def test_checkpoint_keys_require_the_current_supersession_edge():
+    traces, _ = study.fixtures()
+    shortcut_failures = dict.fromkeys(study.CHECKPOINTS, 0)
+    for trace in traces:
+        current = None
+        latest_authorized = None
+        event_ids = set()
+        for checkpoint, stage in zip(study.CHECKPOINTS, trace["stages"], strict=True):
+            for row in stage:
+                event = row["event"]
+                assert event["id"] not in event_ids
+                event_ids.add(event["id"])
+                if (
+                    event["object_id"] != trace["target_object_id"]
+                    or event["source_id"] not in trace["authority_source_ids"]
+                ):
+                    continue
+                latest_authorized = event
+                if event["supersedes"] == (current["id"] if current else None):
+                    current = event
+            expected = trace["expected"][checkpoint]
+            assert expected == {
+                "claim": current["claim"],
+                "status": current["status"],
+                "authority_source_id": current["source_id"],
+                "evidence_id": current["evidence_id"],
+                "permitted_action": current["permitted_action"],
+                "change_id": current["id"],
+            }
+            shortcut_failures[checkpoint] += latest_authorized["id"] != current["id"]
+    assert shortcut_failures == {"correction": 10, "revocation": 10}
+
+
 def test_demo_counts_failures_but_makes_no_live_claim():
     plan = study.make_plan()
     report = study.summarize(plan, study.demo_records(plan))
@@ -81,7 +115,7 @@ def test_demo_counts_failures_but_makes_no_live_claim():
     assert {item["grain"] for item in report["grain_failures"]} == {"enforceability", "retention"}
 
 
-def fake_live_receipts(plan):
+def fake_live_receipts(plan, collection_id="offline-test-collection"):
     """Exercise the scorer with offline provider-shaped receipts."""
     for job, record in zip(plan["jobs"], study.demo_records(plan), strict=True):
         provider = job["provider"]
@@ -90,6 +124,7 @@ def fake_live_receipts(plan):
         yield record | {
             "mode": "live", "requested_model": model, "resolved_model": model,
             "input_tokens": 900, "request": request, "endpoint": endpoint,
+            "collection_id": collection_id,
         }
 
 
@@ -98,6 +133,7 @@ def test_live_gate_handles_effect_missing_result_and_model_drift():
     records = list(fake_live_receipts(plan))
     report = study.summarize(plan, records)
     assert report["pilot_gate"] == "PASS"
+    assert report["collection_id"] == records[0]["collection_id"]
     assert len(report["effects"]) == 4
     assert all(item["ci95"] == [1.0, 1.0] for item in report["effects"])
     assert study.summarize(plan, records[:-1])["pilot_gate"] == "INCONCLUSIVE"
@@ -127,6 +163,32 @@ def test_receipts_reject_duplicates_and_wrong_plan():
         study.summarize(plan, [item, item])
     with pytest.raises(ValueError, match="does not match plan"):
         study.summarize(plan, [item | {"plan_sha256": "wrong"}])
+
+
+def test_scorer_rejects_receipts_pooled_from_different_collections():
+    plan = study.make_plan()
+    left = list(fake_live_receipts(plan, "first"))
+    right = list(fake_live_receipts(plan, "second"))
+    midpoint = len(left) // 2
+    with pytest.raises(ValueError, match="Mixed live collection IDs"):
+        study.summarize(plan, left[:midpoint] + right[midpoint:])
+    left[0].pop("collection_id")
+    with pytest.raises(ValueError, match="lacks collection ID"):
+        study.summarize(plan, left)
+
+
+def test_live_runner_assigns_one_fresh_id_per_collection(monkeypatch):
+    monkeypatch.setattr(providers, "request_completion", lambda *args: {"error": "HTTP_503"})
+    plan = study.make_plan()
+    plan["jobs"] = plan["jobs"][:2]
+    models = dict.fromkeys(study.PROVIDERS, "test-snapshot")
+    keys = dict.fromkeys(study.PROVIDERS, "test-key")
+    first = list(live_records(plan, models, keys))
+    second = list(live_records(plan, models, keys))
+    first_ids = {receipt["collection_id"] for receipt in first}
+    second_ids = {receipt["collection_id"] for receipt in second}
+    assert len(first_ids) == len(second_ids) == 1
+    assert first_ids.isdisjoint(second_ids)
 
 
 def test_provider_parsers_keep_model_usage_and_answer_text():

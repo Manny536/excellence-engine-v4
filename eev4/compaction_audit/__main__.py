@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from uuid import uuid4
 
 from . import providers, study
 
@@ -29,13 +30,16 @@ def read_receipts(path):
 
 
 def live_records(plan, models, keys):
+    collection_id = str(uuid4())
     plan_sha = study.digest(study.canonical(plan))
     for job in plan["jobs"]:
         provider = job["provider"]
         response = providers.request_completion(
             provider, models[provider], job["prompt"], keys[provider]
         )
-        yield study.receipt_identity(job, plan_sha, "live") | response
+        yield study.receipt_identity(job, plan_sha, "live") | response | {
+            "collection_id": collection_id,
+        }
 
 
 def main():
