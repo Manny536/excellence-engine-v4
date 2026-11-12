@@ -1,6 +1,8 @@
-# Compaction Model · Example 1.1
+# Cross-Model Compaction Research · Example 1.1
 
 Love Labs LCA · Excellence Engine v4 (EEv4) · Solance research note · November 12, 2026
+
+This example documents public-search source recovery within the [EEv4 cross-model compaction research package](../../README.md). The formal study and controlled audit were introduced in [PR #19](https://github.com/Manny536/excellence-engine-v4/pull/19).
 
 ## Question
 

@@ -5,7 +5,7 @@ Love Labs LCA · Excellence Engine v4 (EEv4) · November 11, 2026
 | Component | Contents |
 | --- | --- |
 | [Solance research note](solance-research.md) | Literature, live source-recovery evidence, four original screenshots, and evidence limits |
-| [Compaction Model · Example 1.1](examples/1.1/README.md) | PeAIce Thinking Machine source recovery, nine original screenshots, machine-readable record, and public-search replay protocol |
+| [Cross-Model Compaction Research · Example 1.1](examples/1.1/README.md) | PeAIce Thinking Machine source recovery, nine original screenshots, machine-readable record, and public-search replay protocol |
 | [Evaluation protocol](protocol.md) | Hypothesis, experimental arms, compaction and verification algorithms, and decision rule |
 | [Frozen procedure and standing \(h < 1\)](frozen-and-standing-h.md) | Pre-run freeze procedure, the one standing meaning of \(h < 1\), the 4,096-byte UTF-8 context cap, and items still open |
 | [Python audit library](../../eev4/compaction_audit/) | Frozen fixtures, deterministic planning and scoring, and OpenAI and Gemini HTTPS adapters |
