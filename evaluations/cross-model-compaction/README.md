@@ -5,6 +5,7 @@ Love Labs LCA · Excellence Engine v4 (EEv4) · November 11, 2026
 | Component | Contents |
 | --- | --- |
 | [Solance research note](solance-research.md) | Literature, live source-recovery evidence, four original screenshots, and evidence limits |
+| [Cross-Model Compaction Research · Example 1.1](examples/1.1/README.md) | PeAIce Thinking Machine source recovery, nine original screenshots, machine-readable record, and public-search replay protocol |
 | [Evaluation protocol](protocol.md) | Hypothesis, experimental arms, compaction and verification algorithms, and decision rule |
 | [Frozen procedure and standing \(h < 1\)](frozen-and-standing-h.md) | Pre-run freeze procedure, the one standing meaning of \(h < 1\), the 4,096-byte UTF-8 context cap, and items still open |
 | [Python audit library](../../eev4/compaction_audit/) | Frozen fixtures, deterministic planning and scoring, and OpenAI and Gemini HTTPS adapters |
@@ -37,4 +38,4 @@ python -m eev4.compaction_audit live \
 python -m eev4.compaction_audit score --receipts /tmp/eev4-live.jsonl --out /tmp/eev4-live-score.json
 ```
 
-The collection records each request body, UTC request time, requested and returned model IDs, response ID, finish status, and input-token usage when returned. It writes receipts as calls finish. The scorer preserves failed or missing calls as unresolved and labels incomplete runs inconclusive. Run a fresh collection to repeat the study. API contracts are documented by [OpenAI](https://developers.openai.com/api/reference/resources/responses/methods/create) and [Google](https://ai.google.dev/api/generate-content).
+The collection records its ID, each request body, UTC request time, requested and returned model IDs, response ID, finish status, and input-token usage when returned. It writes receipts as calls finish. The scorer rejects missing or mixed live collection IDs, preserves failed or missing calls as unresolved, and labels incomplete runs inconclusive. The revised corpus and receipt format use the `eev4-cross-model-compaction-v2` plan. Score historical receipts with the revision that produced them. API contracts are documented by [OpenAI](https://developers.openai.com/api/reference/resources/responses/methods/create) and [Google](https://ai.google.dev/api/generate-content).

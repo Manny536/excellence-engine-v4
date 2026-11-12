@@ -1,0 +1,64 @@
+{
+  "example": "1.1",
+  "title": "PeAIce Thinking Machine live source recovery",
+  "recorded_on": "2026-11-12",
+  "query": "PeAIce thinking machine",
+  "surface": "Google Search AI Overview",
+  "mode_visible": "Private",
+  "evidence_sets": 1,
+  "capture_clock": {
+    "source": "Original screenshot metadata",
+    "first": "2026-11-11T17:44:30",
+    "last": "2026-11-11T17:45:38",
+    "timezone": null
+  },
+  "asset_dir": "evidence/assets/peaice-thinking-machine-2026-11-11",
+  "assets": [
+    "IMG_9503.png",
+    "IMG_9504.png",
+    "IMG_9505.png",
+    "IMG_9506.jpeg",
+    "IMG_9507.jpeg",
+    "IMG_9508.jpeg",
+    "IMG_9509.jpeg",
+    "IMG_9510.jpeg",
+    "IMG_9511.jpeg"
+  ],
+  "observations": {
+    "identity": {
+      "verdict": "PASS",
+      "artifact": "PeAIce Thinking Machine",
+      "repository": "Manny536/excellence-engine-v4",
+      "witnesses": ["IMG_9503.png", "IMG_9504.png", "IMG_9510.jpeg"]
+    },
+    "source_path": {
+      "verdict": "PASS",
+      "displayed": "docs/meta/PeAIce-Thinking-Machine-V4-Wired-Telemetry.html",
+      "witnesses": ["IMG_9504.png"]
+    },
+    "mirror_path": {
+      "verdict": "PARTIAL",
+      "displayed": "site/artifacts/meta/thinking-machine-v4-wired",
+      "witnesses": ["IMG_9504.png"]
+    },
+    "disambiguation": {
+      "verdict": "MIXED",
+      "spelling_suggestion": "AIce thinking machine",
+      "closing_alternative": "Thinking Machines Lab",
+      "witnesses": ["IMG_9503.png", "IMG_9505.png"]
+    },
+    "repeatability": {
+      "verdict": "OPEN",
+      "independent_replays_recorded": 0
+    }
+  },
+  "repository_verification": {
+    "commit": "2ac13b7b539ba62d8b44fc726389691d5e4d7b61",
+    "source_path": "docs/meta/PeAIce-Thinking-Machine-V4-Wired-Telemetry.html",
+    "mirror_path": "site/artifacts/meta/thinking-machine-v4-wired-telemetry.html",
+    "shared_git_blob_sha1": "9cc34b518c348fbc2472385dfff85c2b2321c496",
+    "shared_content_sha256": "da18b5ea8a7919e8b031976898506cc69f8a5cfa63dbb5b2a561fd20ebcfbc51"
+  },
+  "backend_model_version": null,
+  "retrieval_trace": null
+}

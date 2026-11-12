@@ -37,7 +37,7 @@ The controlling procedure is the AIce section linked above. A summary for this p
 3. The answer key is held by someone other than the author of the code under test. The scorer may recommend a verdict. It cannot rewrite the key, the field list, the pass rule, or the pilot criterion after the freeze event. Frozen is not authority. This follows the standing meaning of \(h < 1\).
 4. Any change after the freeze voids the run. Do not repair in place. Restart only under a new freeze version. A reader verifies a freeze by recomputing the hashes.
 
-The fixtures, prompts, and scorer already in this package, merged in [PR #19](https://github.com/Manny536/excellence-engine-v4/pull/19), are the current executable apparatus. This definition is the procedure a later freeze event must follow before live collection. It does not itself constitute that freeze. Items still owed stay owed until a freeze event records them.
+The fixtures, prompts, and scorer introduced in [PR #19](https://github.com/Manny536/excellence-engine-v4/pull/19) and revised in [PR #21](https://github.com/Manny536/excellence-engine-v4/pull/21) are the executable apparatus. The freeze event remains owed before live collection.
 
 The four live-recovery screenshots and their [SHA-256 manifest](../../evidence/assets/google-source-recovery-2026-11-11/SHA256SUMS) are a separate object. They document the November 11 observation. They are not audit-freeze artifacts. Their PASS and UNVERIFIED results are unchanged.
 
@@ -54,7 +54,9 @@ These items remain open. This note does not close or upgrade them:
 - The [live evidence note](../granular-compaction-live-evidence.md) requires a negative control and a positive control before a comparative freeze. Those controls are not yet required arms of this package's protocol.
 - An INCONCLUSIVE(OPEN) verdict, matching the evidence note's rule that an inadequately decisive comparison stays OPEN rather than failing the pilot, is not yet a distinct branch of the scorer.
 - The choice of 20 traces has no recorded power justification.
-- The CompactionBench preprint is dated October 2026 in this package and in the AIce handoff; Microsoft's page has also been observed to show a November date. The date is not settled here.
-- The statement that a CompactionBench sensitivity study used GPT-5.4 remains unverified against the paper itself.
 
 Existing evidence statuses in this package and in the live evidence note — including PASS, UNVERIFIED, OWED, OPEN, NOT ESTABLISHED / NOT CLAIMED, NOT_APPLICABLE, LIVE EXTERNAL-MODEL OBSERVATION, PARTIAL PASS, and BLOCKED-COMPACTNESS — stay as written.
+
+## Source verification
+
+Preprints.org records November 9, 2026 as the posting date for CompactionBench v1. Table 4 identifies GPT-5.4 as the model used in the sensitivity study. [Version 1 and Table 4](https://www.preprints.org/manuscript/202611.0780)
