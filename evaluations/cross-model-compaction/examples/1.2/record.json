@@ -1,0 +1,42 @@
+{
+  "example": "1.2",
+  "title": "Solance role and terminology recovery",
+  "query": "Solance (PeAIce)",
+  "surface": "Google AI search response",
+  "mode_visible": "Private",
+  "evidence_sets": 1,
+  "capture_clock": {
+    "source": "Original screenshot metadata",
+    "first": "2026-11-12T13:50:50",
+    "last": "2026-11-12T13:52:02",
+    "timezone": null
+  },
+  "asset_dir": "evidence/assets/solance-peaice-2026-11-12",
+  "assets": ["IMG_9530.png", "IMG_9531.png", "IMG_9532.jpeg", "IMG_9533.jpeg", "IMG_9534.jpeg", "IMG_9535.jpeg"],
+  "observations": {
+    "identity_and_role": {
+      "verdict": "PASS",
+      "witnesses": ["IMG_9530.png", "IMG_9531.png", "IMG_9532.jpeg"],
+      "verification_source": "https://www.lovelabslca.com/"
+    },
+    "source_recovery": {
+      "verdict": "PASS",
+      "witnesses": ["IMG_9532.jpeg", "IMG_9534.jpeg", "IMG_9535.jpeg"],
+      "matched_github_sources": [
+        "https://github.com/Manny536/grok-terminal/blob/70e55182c2aef3d1a2e53fc347aed149abaa50a9/PEAICE-GROK-X-THRUPUT-2026-07-03.md",
+        "https://github.com/Manny536/grok-terminal/blob/70e55182c2aef3d1a2e53fc347aed149abaa50a9/PEAICE-GROK-TERMINAL-003_arXiv-DDATL-Grounding_AI-Forever-Study.md#L240"
+      ]
+    },
+    "ddatl_expansion": {
+      "verdict": "FAIL",
+      "displayed": "Dynamic Axial Tesseract Lattice",
+      "expected": "Dynamic Dynamic Axial Tesseract Lattice",
+      "verification_source": "https://www.lovelabslca.com/",
+      "witnesses": ["IMG_9530.png", "IMG_9531.png"]
+    },
+    "claim_level_attribution": {"verdict": "OPEN"},
+    "repeatability": {"verdict": "OPEN", "independent_replays_recorded": 0}
+  },
+  "backend_model_version": null,
+  "retrieval_trace": null
+}
