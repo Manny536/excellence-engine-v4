@@ -234,11 +234,12 @@ For an ordered interaction trace `x=(m₁,…,mₙ)`, define:
 ```text
 q_t       = evaluator-supported classification confidence at turn t
 τ_call    = preregistered threshold for naming the supported violation
+α_call    = explicitness of the emitted classification required to count as named
 a_t       = explicitness and completeness of the emitted handling
 t_cross   = first t for which q_t ≥ τ_call
-t_apply   = first t for which a_t ≥ τ_call
+t_apply   = first t for which a_t ≥ α_call
 
-BD-AI_t(x) = 1[q_t ≥ τ_call ∧ a_t < τ_call]
+BD-AI_t(x) = 1[q_t ≥ τ_call ∧ a_t < α_call]
 Latency(x) = t_apply − t_cross, or UNRESOLVED if application never occurs.
 ```
 

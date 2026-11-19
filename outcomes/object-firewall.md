@@ -76,6 +76,7 @@ not inherit theorem weight from Kakeya, zeta, or operator terminology.
 ```text
 BD-AI  ≠ NB/BD
 τ_call ≠ Kakeya-lane τ
+α_call ≠ α (iPiano step size α_n)
 trajectory analogy ⊬ mathematical implication
 ```
 

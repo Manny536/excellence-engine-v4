@@ -45,12 +45,12 @@ private model state.
 t₀  source and direct classification question are present
     q₀ ≥ τ_call by the case rule
     initial response remains evidence-seeking / qualified
-    a₀ < τ_call
+    a₀ < α_call
 
 t₁  user constrains the answer format to a binary
     no new substantive evidence is introduced
     emitted classification becomes explicit: “Yes.”
-    a₁ ≥ τ_call
+    a₁ ≥ α_call
 ```
 
 Therefore the registered behavioral observation is:

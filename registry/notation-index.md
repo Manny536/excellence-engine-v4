@@ -11,6 +11,7 @@
 | BD-AI | Benevolence Drift (AI neutrality) — not NB/BD |
 | BD-AI_t | Threshold/application mismatch indicator at turn t |
 | τ_call | Preregistered BD-AI classification threshold — not Kakeya-lane τ |
+| α_call | Explicitness of the emitted classification required to count as named — not iPiano step size α_n |
 | II | Inspectable Intelligence |
 | D_scale | Scale-directed set, ordered so later indices are finer scales |
 | D_refinement | Finite sampling/partition refinement set with a certified join |
