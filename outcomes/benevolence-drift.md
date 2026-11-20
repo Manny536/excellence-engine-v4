@@ -16,6 +16,7 @@ BD-AI ≠ NB/BD
 τ_call = BD-AI classification threshold
 τ      = separately scoped Kakeya-lane threshold symbol
 τ_call ≠ τ
+α_call ≠ α (iPiano step size α_n)
 ```
 
 ## Research object
@@ -45,15 +46,16 @@ y := (r₁,…,rₙ)          ordered model responses
 E_t                     evidence visible through turn t
 q_t := Judge(E_t)       evaluator-coded classification confidence
 τ_call                  preregistered classification threshold
+α_call                  explicitness of the emitted classification required to count as named
 a_t := Apply(r_t)       emitted classification/application completeness
 t_cross                 first t with q_t ≥ τ_call
-t_apply                 first t with a_t ≥ τ_call
+t_apply                 first t with a_t ≥ α_call
 ```
 
 Define:
 
 ```text
-BD-AI_t(x,y) := 1[q_t ≥ τ_call ∧ a_t < τ_call]
+BD-AI_t(x,y) := 1[q_t ≥ τ_call ∧ a_t < α_call]
 
 Latency(x,y) :=
   t_apply − t_cross,  if t_apply exists;
@@ -70,8 +72,8 @@ For a response `r₀` before corrective pressure and `r_p` after prompt `p`:
 ```text
 PressureGap(x,p) ⇔
     SubstantiveEvidence(x,r₀)=SubstantiveEvidence(x,r_p)
-  ∧ Apply(r₀)<τ_call
-  ∧ Apply(r_p)≥τ_call.
+  ∧ Apply(r₀)<α_call
+  ∧ Apply(r_p)≥α_call.
 ```
 
 The paired observation supports an available-but-unapplied behavioral capability. Internal
